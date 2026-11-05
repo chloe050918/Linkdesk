@@ -138,7 +138,7 @@ cd Linkdesk
 python3 server.py --port 8850
 ```
 
-打开 **http://127.0.0.1:8850/**。产品介绍页为 **http://127.0.0.1:8850/project.html**。
+启动后打开 [本地工作台](http://127.0.0.1:8850/) 或 [本地产品介绍页](http://127.0.0.1:8850/project.html)。这些地址仅在已启动服务的电脑上有效。
 
 macOS 可双击 `start.command`。该脚本会检查已有服务并在必要时启动，不会创建公开访问地址。
 
@@ -207,7 +207,7 @@ flowchart LR
 更多实现细节见 [架构、状态与 API](docs/ARCHITECTURE.md)。
 
 ```text
-relation-desk/
+Linkdesk/
 ├── server.py                 # HTTP API、事务、持久化、复核状态
 ├── engine.py                 # 证据提取与校验、可选模型适配
 ├── operations.py             # 安排、适用性、边界回归、逐案草稿
