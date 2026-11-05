@@ -1,0 +1,113 @@
+{
+  "suite_version": "boundary-1.0",
+  "dataset_sha256": "7ae78285904c084d0437c616f0ec6d8b9fe90b2b96dc2e7e2a7ef74317d643a2",
+  "policy_hash": "35cf9a3fc5354c3ae858582535e488184988fcbe4efe84d341779b42df7cfd02",
+  "policy_version": "agency-review-1.0",
+  "total": 10,
+  "passed": 10,
+  "failed": 0,
+  "baseline_passed": 3,
+  "rows": [
+    {
+      "id": "EVAL-01",
+      "name": "有效授权 + 操作重合",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "reason": "本案授权有效；控制关系未确认，可准备代理关系复核",
+      "baseline": true,
+      "baseline_passed": true
+    },
+    {
+      "id": "EVAL-02",
+      "name": "只有同 IP / 同 App",
+      "expected": false,
+      "actual": false,
+      "passed": true,
+      "reason": "缺少覆盖本案且有效、已核对的代理授权",
+      "baseline": true,
+      "baseline_passed": false
+    },
+    {
+      "id": "EVAL-03",
+      "name": "授权已失效",
+      "expected": false,
+      "actual": false,
+      "passed": true,
+      "reason": "缺少覆盖本案且有效、已核对的代理授权",
+      "baseline": true,
+      "baseline_passed": false
+    },
+    {
+      "id": "EVAL-04",
+      "name": "授权来源未核对",
+      "expected": false,
+      "actual": false,
+      "passed": true,
+      "reason": "缺少覆盖本案且有效、已核对的代理授权",
+      "baseline": true,
+      "baseline_passed": false
+    },
+    {
+      "id": "EVAL-05",
+      "name": "代理与同集团同时成立",
+      "expected": false,
+      "actual": false,
+      "passed": true,
+      "reason": "已有独立控制关系证据，不能套用代理解释",
+      "baseline": true,
+      "baseline_passed": false
+    },
+    {
+      "id": "EVAL-06",
+      "name": "相反控制证明并存",
+      "expected": false,
+      "actual": false,
+      "passed": true,
+      "reason": "控制关系材料冲突，需专家逐项核验",
+      "baseline": true,
+      "baseline_passed": false
+    },
+    {
+      "id": "EVAL-07",
+      "name": "授权属于别的公司",
+      "expected": false,
+      "actual": false,
+      "passed": true,
+      "reason": "缺少覆盖本案且有效、已核对的代理授权",
+      "baseline": true,
+      "baseline_passed": false
+    },
+    {
+      "id": "EVAL-08",
+      "name": "明确否定委托",
+      "expected": false,
+      "actual": false,
+      "passed": true,
+      "reason": "缺少覆盖本案且有效、已核对的代理授权",
+      "baseline": true,
+      "baseline_passed": false
+    },
+    {
+      "id": "EVAL-09",
+      "name": "新主体的有效授权",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "reason": "本案授权有效；控制关系未确认，可准备代理关系复核",
+      "baseline": true,
+      "baseline_passed": true
+    },
+    {
+      "id": "EVAL-10",
+      "name": "有授权但不属于操作重合模式",
+      "expected": false,
+      "actual": false,
+      "passed": true,
+      "reason": "不属于共享操作与同 App 的模式",
+      "baseline": false,
+      "baseline_passed": true
+    }
+  ],
+  "notice": "合成边界回归，只验证规则适用性；不是线上准确率、节省工时或召回率。"
+}

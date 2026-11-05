@@ -1,0 +1,9 @@
+data/
+__pycache__/
+.env
+.env.*
+
+!.env.example
+.DS_Store
+*.zip
+*.log

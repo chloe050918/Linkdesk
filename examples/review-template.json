@@ -1,0 +1,152 @@
+{
+  "id": "RULE-5da969",
+  "name": "操作重合中的代理授权检查",
+  "version": "agency-review-1.0",
+  "source_id": "batch-01",
+  "source_title": "青禾科技 × 远帆数字营销",
+  "source_review_id": "RV-6c3888",
+  "source_fingerprint": "16c4e83fca88556658b246602b80811ed85367ead69fe65eed3368fb92d62203",
+  "rationale": "共享操作和同 App 可能来自代理代投。每案先核对有效授权，存在控制关系证据或冲突时单独处理；只准备代理关系复核，不据此认定同集团或无集团关系。",
+  "status": "active",
+  "created_at": "2026-11-05T23:10:06.982425+00:00",
+  "evaluation": {
+    "suite_version": "boundary-1.0",
+    "dataset_sha256": "7ae78285904c084d0437c616f0ec6d8b9fe90b2b96dc2e7e2a7ef74317d643a2",
+    "policy_hash": "5d64b7a7c361b5a33778d25c55d9148643798022951d403240c1abf8ebec15da",
+    "policy_version": "agency-review-1.0",
+    "total": 10,
+    "passed": 10,
+    "failed": 0,
+    "baseline_passed": 3,
+    "rows": [
+      {
+        "id": "EVAL-01",
+        "name": "有效授权 + 操作重合",
+        "expected": true,
+        "actual": true,
+        "passed": true,
+        "reason": "本案授权有效；控制关系未确认，可准备代理关系复核",
+        "baseline": true,
+        "baseline_passed": true
+      },
+      {
+        "id": "EVAL-02",
+        "name": "只有同 IP / 同 App",
+        "expected": false,
+        "actual": false,
+        "passed": true,
+        "reason": "缺少覆盖本案且有效、已核对的代理授权",
+        "baseline": true,
+        "baseline_passed": false
+      },
+      {
+        "id": "EVAL-03",
+        "name": "授权已失效",
+        "expected": false,
+        "actual": false,
+        "passed": true,
+        "reason": "缺少覆盖本案且有效、已核对的代理授权",
+        "baseline": true,
+        "baseline_passed": false
+      },
+      {
+        "id": "EVAL-04",
+        "name": "授权来源未核对",
+        "expected": false,
+        "actual": false,
+        "passed": true,
+        "reason": "缺少覆盖本案且有效、已核对的代理授权",
+        "baseline": true,
+        "baseline_passed": false
+      },
+      {
+        "id": "EVAL-05",
+        "name": "代理与同集团同时成立",
+        "expected": false,
+        "actual": false,
+        "passed": true,
+        "reason": "已有独立控制关系证据，不能套用代理解释",
+        "baseline": true,
+        "baseline_passed": false
+      },
+      {
+        "id": "EVAL-06",
+        "name": "相反控制证明并存",
+        "expected": false,
+        "actual": false,
+        "passed": true,
+        "reason": "控制关系材料冲突，需专家逐项核验",
+        "baseline": true,
+        "baseline_passed": false
+      },
+      {
+        "id": "EVAL-07",
+        "name": "授权属于别的公司",
+        "expected": false,
+        "actual": false,
+        "passed": true,
+        "reason": "缺少覆盖本案且有效、已核对的代理授权",
+        "baseline": true,
+        "baseline_passed": false
+      },
+      {
+        "id": "EVAL-08",
+        "name": "明确否定委托",
+        "expected": false,
+        "actual": false,
+        "passed": true,
+        "reason": "缺少覆盖本案且有效、已核对的代理授权",
+        "baseline": true,
+        "baseline_passed": false
+      },
+      {
+        "id": "EVAL-09",
+        "name": "新主体的有效授权",
+        "expected": true,
+        "actual": true,
+        "passed": true,
+        "reason": "本案授权有效；控制关系未确认，可准备代理关系复核",
+        "baseline": true,
+        "baseline_passed": true
+      },
+      {
+        "id": "EVAL-10",
+        "name": "有授权但不属于操作重合模式",
+        "expected": false,
+        "actual": false,
+        "passed": true,
+        "reason": "不属于共享操作与同 App 的模式",
+        "baseline": false,
+        "baseline_passed": true
+      }
+    ],
+    "notice": "合成边界回归，只验证规则适用性；不是线上准确率、节省工时或召回率。",
+    "at": "2026-11-05T23:11:24.668345+00:00"
+  },
+  "history": [
+    {
+      "at": "2026-11-05T23:10:06.982469+00:00",
+      "action": "create",
+      "text": "从已复核案例建立检查模板。"
+    },
+    {
+      "at": "2026-11-05T23:11:24.668354+00:00",
+      "action": "evaluate",
+      "text": "完成固定边界回归。"
+    },
+    {
+      "at": "2026-11-05T23:12:47.625825+00:00",
+      "action": "activate",
+      "text": "启用复核草稿模板；不自动确认标签。"
+    },
+    {
+      "at": "2026-11-05T23:15:37.254521+00:00",
+      "action": "apply",
+      "text": "生成 2 份逐案证据草稿。",
+      "case_ids": [
+        "batch-02",
+        "batch-03"
+      ]
+    }
+  ]
+}

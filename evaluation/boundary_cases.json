@@ -1,0 +1,319 @@
+{
+  "version": "boundary-1.0",
+  "description": "独立于运行队列的合成边界样本。eligible 指是否允许生成代理复核草稿，不是集团真值。",
+  "cases": [
+    {
+      "id": "EVAL-01",
+      "name": "有效授权 + 操作重合",
+      "eligible": true,
+      "input": {
+        "a": "海盐科技有限公司",
+        "b": "灯塔营销有限公司",
+        "question": "是否为代理合作？",
+        "as_of": "2026-11-06",
+        "materials": [
+          {
+            "id": "E-1",
+            "title": "回归材料",
+            "kind": "agreement",
+            "text": "海盐科技有限公司委托灯塔营销有限公司执行广告投放。\n适用范围：2026 年第四季度。",
+            "source": "合成边界材料",
+            "date": "2026-11-01",
+            "expires": "2026-12-31",
+            "verified": true,
+            "active": true
+          }
+        ],
+        "signals": {
+          "shared_operation": true,
+          "same_app": true
+        }
+      }
+    },
+    {
+      "id": "EVAL-02",
+      "name": "只有同 IP / 同 App",
+      "eligible": false,
+      "input": {
+        "a": "海盐科技有限公司",
+        "b": "灯塔营销有限公司",
+        "question": "是否为代理合作？",
+        "as_of": "2026-11-06",
+        "materials": [
+          {
+            "id": "E-2",
+            "title": "回归材料",
+            "kind": "signal",
+            "text": "海盐科技有限公司与灯塔营销有限公司共享IP并推广同一个App。",
+            "source": "合成边界材料",
+            "date": "2026-11-01",
+            "expires": "2026-12-31",
+            "verified": true,
+            "active": true
+          }
+        ],
+        "signals": {
+          "shared_operation": true,
+          "same_app": true
+        }
+      }
+    },
+    {
+      "id": "EVAL-03",
+      "name": "授权已失效",
+      "eligible": false,
+      "input": {
+        "a": "海盐科技有限公司",
+        "b": "灯塔营销有限公司",
+        "question": "是否为代理合作？",
+        "as_of": "2026-11-06",
+        "materials": [
+          {
+            "id": "E-3",
+            "title": "回归材料",
+            "kind": "agreement",
+            "text": "海盐科技有限公司委托灯塔营销有限公司执行广告投放。\n适用范围：2026 年第四季度。",
+            "source": "合成边界材料",
+            "date": "2026-11-01",
+            "expires": "2026-10-31",
+            "verified": true,
+            "active": true
+          }
+        ],
+        "signals": {
+          "shared_operation": true,
+          "same_app": true
+        }
+      }
+    },
+    {
+      "id": "EVAL-04",
+      "name": "授权来源未核对",
+      "eligible": false,
+      "input": {
+        "a": "海盐科技有限公司",
+        "b": "灯塔营销有限公司",
+        "question": "是否为代理合作？",
+        "as_of": "2026-11-06",
+        "materials": [
+          {
+            "id": "E-4",
+            "title": "回归材料",
+            "kind": "agreement",
+            "text": "海盐科技有限公司委托灯塔营销有限公司执行广告投放。\n适用范围：2026 年第四季度。",
+            "source": "合成边界材料",
+            "date": "2026-11-01",
+            "expires": "2026-12-31",
+            "verified": false,
+            "active": true
+          }
+        ],
+        "signals": {
+          "shared_operation": true,
+          "same_app": true
+        }
+      }
+    },
+    {
+      "id": "EVAL-05",
+      "name": "代理与同集团同时成立",
+      "eligible": false,
+      "input": {
+        "a": "海盐科技有限公司",
+        "b": "灯塔营销有限公司",
+        "question": "是否为代理合作？",
+        "as_of": "2026-11-06",
+        "materials": [
+          {
+            "id": "E-5",
+            "title": "回归材料",
+            "kind": "agreement",
+            "text": "海盐科技有限公司委托灯塔营销有限公司执行广告投放。\n适用范围：2026 年第四季度。",
+            "source": "合成边界材料",
+            "date": "2026-11-01",
+            "expires": "2026-12-31",
+            "verified": true,
+            "active": true
+          },
+          {
+            "id": "G-1",
+            "title": "控制证明",
+            "kind": "registry",
+            "text": "总公司持有海盐科技有限公司 100% 股权、持有灯塔营销有限公司 90% 股权，并控制两家公司的董事会。",
+            "source": "合成登记",
+            "date": "2026-11-01",
+            "expires": "",
+            "verified": true,
+            "active": true
+          }
+        ],
+        "signals": {
+          "shared_operation": true,
+          "same_app": true
+        }
+      }
+    },
+    {
+      "id": "EVAL-06",
+      "name": "相反控制证明并存",
+      "eligible": false,
+      "input": {
+        "a": "海盐科技有限公司",
+        "b": "灯塔营销有限公司",
+        "question": "是否为代理合作？",
+        "as_of": "2026-11-06",
+        "materials": [
+          {
+            "id": "E-6",
+            "title": "回归材料",
+            "kind": "agreement",
+            "text": "海盐科技有限公司委托灯塔营销有限公司执行广告投放。\n适用范围：2026 年第四季度。",
+            "source": "合成边界材料",
+            "date": "2026-11-01",
+            "expires": "2026-12-31",
+            "verified": true,
+            "active": true
+          },
+          {
+            "id": "G-1",
+            "title": "控制证明",
+            "kind": "registry",
+            "text": "总公司持有海盐科技有限公司 100% 股权、持有灯塔营销有限公司 90% 股权，并控制两家公司的董事会。",
+            "source": "合成登记",
+            "date": "2026-11-01",
+            "expires": "",
+            "verified": true,
+            "active": true
+          },
+          {
+            "id": "G-2",
+            "title": "控制证明",
+            "kind": "registry",
+            "text": "海盐科技有限公司与灯塔营销有限公司不存在共同控制。",
+            "source": "合成登记",
+            "date": "2026-11-01",
+            "expires": "",
+            "verified": true,
+            "active": true
+          }
+        ],
+        "signals": {
+          "shared_operation": true,
+          "same_app": true
+        }
+      }
+    },
+    {
+      "id": "EVAL-07",
+      "name": "授权属于别的公司",
+      "eligible": false,
+      "input": {
+        "a": "海盐科技有限公司",
+        "b": "灯塔营销有限公司",
+        "question": "是否为代理合作？",
+        "as_of": "2026-11-06",
+        "materials": [
+          {
+            "id": "E-7",
+            "title": "回归材料",
+            "kind": "agreement",
+            "text": "海湾科技有限公司委托灯塔营销有限公司执行广告投放。",
+            "source": "合成边界材料",
+            "date": "2026-11-01",
+            "expires": "2026-12-31",
+            "verified": true,
+            "active": true
+          }
+        ],
+        "signals": {
+          "shared_operation": true,
+          "same_app": true
+        }
+      }
+    },
+    {
+      "id": "EVAL-08",
+      "name": "明确否定委托",
+      "eligible": false,
+      "input": {
+        "a": "海盐科技有限公司",
+        "b": "灯塔营销有限公司",
+        "question": "是否为代理合作？",
+        "as_of": "2026-11-06",
+        "materials": [
+          {
+            "id": "E-8",
+            "title": "回归材料",
+            "kind": "agreement",
+            "text": "海盐科技有限公司未委托灯塔营销有限公司执行广告投放。",
+            "source": "合成边界材料",
+            "date": "2026-11-01",
+            "expires": "2026-12-31",
+            "verified": true,
+            "active": true
+          }
+        ],
+        "signals": {
+          "shared_operation": true,
+          "same_app": true
+        }
+      }
+    },
+    {
+      "id": "EVAL-09",
+      "name": "新主体的有效授权",
+      "eligible": true,
+      "input": {
+        "a": "榕树游戏有限公司",
+        "b": "岚舟广告有限公司",
+        "question": "是否为代理合作？",
+        "as_of": "2026-11-06",
+        "materials": [
+          {
+            "id": "E-9",
+            "title": "回归材料",
+            "kind": "agreement",
+            "text": "榕树游戏有限公司委托岚舟广告有限公司执行广告投放。\n适用范围：2026 年第四季度。",
+            "source": "合成边界材料",
+            "date": "2026-11-01",
+            "expires": "2026-12-31",
+            "verified": true,
+            "active": true
+          }
+        ],
+        "signals": {
+          "shared_operation": true,
+          "same_app": true
+        }
+      }
+    },
+    {
+      "id": "EVAL-10",
+      "name": "有授权但不属于操作重合模式",
+      "eligible": false,
+      "input": {
+        "a": "海盐科技有限公司",
+        "b": "灯塔营销有限公司",
+        "question": "是否为代理合作？",
+        "as_of": "2026-11-06",
+        "materials": [
+          {
+            "id": "E-10",
+            "title": "回归材料",
+            "kind": "agreement",
+            "text": "海盐科技有限公司委托灯塔营销有限公司执行广告投放。\n适用范围：2026 年第四季度。",
+            "source": "合成边界材料",
+            "date": "2026-11-01",
+            "expires": "2026-12-31",
+            "verified": true,
+            "active": true
+          }
+        ],
+        "signals": {
+          "shared_operation": false,
+          "same_app": false
+        }
+      }
+    }
+  ]
+}

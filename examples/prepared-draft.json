@@ -1,0 +1,21 @@
+{
+  "sample": true,
+  "company_a": "穗禾游戏有限公司",
+  "company_b": "远帆数字营销有限公司",
+  "draft": {
+    "policy_id": "RULE-5da969",
+    "policy_name": "操作重合中的代理授权检查",
+    "version": "agency-review-1.0",
+    "fingerprint": "15e7f563e11d52c5899bd4a27cafc5a439c20bbba8e5836b32d4821f046cb4b6",
+    "selected": [
+      "agency"
+    ],
+    "refs": [
+      "batch-02-A"
+    ],
+    "rationale": "请核对本案代理授权：batch-02-A：穗禾游戏有限公司委托远帆数字营销有限公司执行广告投放。（2026 年第四季度，穗禾品牌投放。）。本次仅提交代理关系，集团关系保持未确认；不将操作相似直接作为控制关系证明。",
+    "source_case": "batch-01",
+    "source_review": "RV-6c3888",
+    "created_at": "2026-11-05T23:15:37.247651+00:00"
+  }
+}
