@@ -10,6 +10,8 @@
 
 [产品介绍](docs/PRODUCT.md) · [四分钟演示](docs/DEMO.md) · [本地运行](#本地运行) · [架构与接口](docs/ARCHITECTURE.md) · [验证记录](docs/VALIDATION.md)
 
+[![Tests](https://github.com/chloe050918/Linkdesk/actions/workflows/test.yml/badge.svg)](https://github.com/chloe050918/Linkdesk/actions/workflows/test.yml)
+
 Python 标准库 · Vanilla JavaScript · SQLite · 本地优先
 
 </div>

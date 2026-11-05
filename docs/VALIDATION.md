@@ -41,7 +41,7 @@
 
 已将项目包解压到临时目录，用独立数据库在 8852 端口启动：确认 12 条候选初始化成功，工作台、介绍页、README 与截图路由均返回成功。验证后关闭临时服务。Markdown 本地链接检查通过。
 
-GitHub Actions 配置已提供；本次只运行了本地验证，未宣称远程 CI 已运行。
+GitHub Actions 已实际运行并通过：[首次发布验证](https://github.com/chloe050918/Linkdesk/actions/runs/42132425388)。执行 45 项单元/工作流测试、两份 JavaScript 语法检查与固定边界回归。最新状态见仓库 Actions。
 
 ## 未验证范围
 
