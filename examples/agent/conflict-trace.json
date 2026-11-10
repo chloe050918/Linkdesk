@@ -1,0 +1,590 @@
+{
+  "id": "case-573981c47939",
+  "title": "南屿互动 × 清禾传媒",
+  "task": "核验两家公司当前的集团、代理和预算决策关系，检查初筛同集团标签是否有依据。",
+  "companies": [
+    "南屿互动有限公司",
+    "清禾传媒有限公司"
+  ],
+  "sample": "conflict",
+  "skill_id": "skill-43f6c6e905cf",
+  "proposal": {
+    "missing": [
+      "缺少明确载明最终预算审批权归属或统一预算决策安排的合同、授权或治理文件。"
+    ],
+    "summary": "已核：南屿互动自2026-09-01起持有清禾传媒100%股权并控制该公司；清禾传媒现具有效广告投放执行代理授权（至2027-12-31）。未核：最终预算审批权未披露，预算关系保留未知。",
+    "group": {
+      "value": "same_group",
+      "reason": "企业主体登记摘要载明2026-09-01起南屿互动持有清禾传媒100%股权并控制该公司，覆盖核验日2026-11-10，初筛同集团有依据。",
+      "evidence": [
+        {
+          "source_id": "src-6041635a5129",
+          "quote": "2026-09-01 生效：南屿互动有限公司 持有 清禾传媒有限公司 100% 股权并控制该公司。",
+          "source_hash": "4d508d97c6db6690e57c714c2dd4422f30c7ea19d6d68a76a299dd359e2584d1"
+        }
+      ]
+    },
+    "agency": {
+      "value": "confirmed",
+      "reason": "广告代理授权书明确南屿互动委托清禾传媒为App“岛屿笔记”提供广告账户操作、素材上传及投放执行服务，授权期限2025-01-01至2027-12-31，当前仍在有效期内。",
+      "evidence": [
+        {
+          "source_id": "src-95cc923b670f",
+          "quote": "委托方：南屿互动有限公司\n\n受托方：清禾传媒有限公司\n\n委托方授权受托方为 App「岛屿笔记」提供广告账户操作、素材上传及投放执行服务。\n\n授权期限：2025-01-01 至 2027-12-31。",
+          "source_hash": "08bb1509bd14cf888cfa6850db5f9455ff6052147dee34b5d9209adb7227e1bd"
+        }
+      ]
+    },
+    "budget": {
+      "value": "unknown",
+      "reason": "现有材料明确说明广告代理授权不涉及最终预算审批权，企业登记摘要和合作介绍也未披露最终预算审批权或统一预算决策安排，无法确认。",
+      "evidence": [
+        {
+          "source_id": "src-95cc923b670f",
+          "quote": "本授权不涉及股权转让、公司控制关系或最终预算审批权。",
+          "source_hash": "08bb1509bd14cf888cfa6850db5f9455ff6052147dee34b5d9209adb7227e1bd"
+        },
+        {
+          "source_id": "src-6041635a5129",
+          "quote": "预算审批权不在本摘要披露范围内。",
+          "source_hash": "4d508d97c6db6690e57c714c2dd4422f30c7ea19d6d68a76a299dd359e2584d1"
+        },
+        {
+          "source_id": "src-15c057778121",
+          "quote": "本页仅介绍商业合作，不披露股权、控制关系或预算审批权。",
+          "source_hash": "d1f4b6ad7838c5832123917c6658014b45feb9c499cadb7ceb34dcc5930a4763"
+        }
+      ]
+    },
+    "id": "proposal-0a28eae6ae02",
+    "at": "2026-11-10T15:45:39.256566+00:00",
+    "status": "draft",
+    "verification": {
+      "supported": true,
+      "issues": []
+    }
+  },
+  "review": null,
+  "messages": [
+    {
+      "id": "msg-224904b1a54c",
+      "role": "user",
+      "content": "请开始查证，阅读索引里的来源链接，核对当前日期与授权范围，分别提交集团、代理、预算决策三个维度的标签草稿。",
+      "at": "2026-11-10T15:45:18.446102+00:00"
+    },
+    {
+      "id": "msg-a02bc6f8bd93",
+      "role": "assistant",
+      "content": "结论草稿：集团关系为同集团（2026-09-01起南屿互动持有清禾传媒100%股权并控制），代理关系已确认（授权期限2025-01-01至2027-12-31，覆盖当前核验日），预算决策关系未知（现有材料均未披露最终预算审批权归属，且授权书明确不涉及）。缺失项：需补充预算审批权或统一预算决策安排的明确文件。",
+      "at": "2026-11-10T15:45:43.915236+00:00"
+    }
+  ],
+  "events": [
+    {
+      "at": "2026-11-10T15:45:18.413193+00:00",
+      "type": "created",
+      "text": "建立核验任务",
+      "seq": 231
+    },
+    {
+      "at": "2026-11-10T15:45:18.450294+00:00",
+      "type": "message",
+      "text": "请开始查证，阅读索引里的来源链接，核对当前日期与授权范围，分别提交集团、代理、预算决策三个维度的标签草稿。",
+      "role": "user",
+      "seq": 232
+    },
+    {
+      "at": "2026-11-10T15:45:18.456591+00:00",
+      "type": "run_started",
+      "text": "开始查证",
+      "run_id": "run-e0d52043d52a",
+      "seq": 233
+    },
+    {
+      "at": "2026-11-10T15:45:18.475197+00:00",
+      "type": "skill_used",
+      "text": "应用方法：三维关系标签核验法",
+      "skill_id": "skill-43f6c6e905cf",
+      "version": 1,
+      "seq": 234
+    },
+    {
+      "at": "2026-11-10T15:45:22.207703+00:00",
+      "type": "model_call",
+      "text": "模型已完成一次判断",
+      "run_id": "run-e0d52043d52a",
+      "turn": 1,
+      "model": "doubao-seed-2-1-pro-260628",
+      "usage": {
+        "completion_tokens": 56,
+        "prompt_tokens": 2443,
+        "total_tokens": 2499,
+        "prompt_tokens_details": {
+          "cached_tokens": 1848
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      },
+      "latency_ms": 3714,
+      "seq": 235
+    },
+    {
+      "at": "2026-11-10T15:45:22.222444+00:00",
+      "type": "tool_start",
+      "text": "open_url",
+      "args": {
+        "url": "http://127.0.0.1:8860/sample-site/conflict/overview"
+      },
+      "run_id": "run-e0d52043d52a",
+      "seq": 236
+    },
+    {
+      "at": "2026-11-10T15:45:22.812498+00:00",
+      "type": "browser",
+      "text": "客户核验资料目录 · 核验资料",
+      "actor": "agent",
+      "action": "open_url",
+      "source_id": "src-cc10d9dadd6f",
+      "url": "http://127.0.0.1:8860/sample-site/conflict/overview",
+      "args": {
+        "url": "http://127.0.0.1:8860/sample-site/conflict/overview"
+      },
+      "seq": 238
+    },
+    {
+      "at": "2026-11-10T15:45:22.820905+00:00",
+      "type": "tool_end",
+      "text": "open_url",
+      "ok": true,
+      "source_id": "src-cc10d9dadd6f",
+      "run_id": "run-e0d52043d52a",
+      "seq": 239
+    },
+    {
+      "at": "2026-11-10T15:45:24.406166+00:00",
+      "type": "model_call",
+      "text": "模型已完成一次判断",
+      "run_id": "run-e0d52043d52a",
+      "turn": 2,
+      "model": "doubao-seed-2-1-pro-260628",
+      "usage": {
+        "completion_tokens": 36,
+        "prompt_tokens": 3035,
+        "total_tokens": 3071,
+        "prompt_tokens_details": {
+          "cached_tokens": 1848
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      },
+      "latency_ms": 1544,
+      "seq": 240
+    },
+    {
+      "at": "2026-11-10T15:45:24.422321+00:00",
+      "type": "tool_start",
+      "text": "click_link",
+      "args": {
+        "text": "广告代理授权书"
+      },
+      "run_id": "run-e0d52043d52a",
+      "seq": 241
+    },
+    {
+      "at": "2026-11-10T15:45:24.581484+00:00",
+      "type": "browser",
+      "text": "广告代理授权书 · 核验资料",
+      "actor": "agent",
+      "action": "click_link",
+      "source_id": "src-95cc923b670f",
+      "url": "http://127.0.0.1:8860/sample-site/conflict/authorization",
+      "args": {
+        "text": "广告代理授权书"
+      },
+      "seq": 242
+    },
+    {
+      "at": "2026-11-10T15:45:24.585439+00:00",
+      "type": "tool_end",
+      "text": "click_link",
+      "ok": true,
+      "source_id": "src-95cc923b670f",
+      "run_id": "run-e0d52043d52a",
+      "seq": 243
+    },
+    {
+      "at": "2026-11-10T15:45:26.348427+00:00",
+      "type": "model_call",
+      "text": "模型已完成一次判断",
+      "run_id": "run-e0d52043d52a",
+      "turn": 3,
+      "model": "doubao-seed-2-1-pro-260628",
+      "usage": {
+        "completion_tokens": 36,
+        "prompt_tokens": 3639,
+        "total_tokens": 3675,
+        "prompt_tokens_details": {
+          "cached_tokens": 2872
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      },
+      "latency_ms": 1756,
+      "seq": 246
+    },
+    {
+      "at": "2026-11-10T15:45:26.368200+00:00",
+      "type": "tool_start",
+      "text": "click_link",
+      "args": {
+        "text": "企业主体登记摘要"
+      },
+      "run_id": "run-e0d52043d52a",
+      "seq": 247
+    },
+    {
+      "at": "2026-11-10T15:45:26.490972+00:00",
+      "type": "browser",
+      "text": "企业主体登记摘要 · 核验资料",
+      "actor": "agent",
+      "action": "click_link",
+      "source_id": "src-6041635a5129",
+      "url": "http://127.0.0.1:8860/sample-site/conflict/registry",
+      "args": {
+        "text": "企业主体登记摘要"
+      },
+      "seq": 248
+    },
+    {
+      "at": "2026-11-10T15:45:26.500155+00:00",
+      "type": "tool_end",
+      "text": "click_link",
+      "ok": true,
+      "source_id": "src-6041635a5129",
+      "run_id": "run-e0d52043d52a",
+      "seq": 249
+    },
+    {
+      "at": "2026-11-10T15:45:28.028919+00:00",
+      "type": "model_call",
+      "text": "模型已完成一次判断",
+      "run_id": "run-e0d52043d52a",
+      "turn": 4,
+      "model": "doubao-seed-2-1-pro-260628",
+      "usage": {
+        "completion_tokens": 34,
+        "prompt_tokens": 4215,
+        "total_tokens": 4249,
+        "prompt_tokens_details": {
+          "cached_tokens": 2872
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      },
+      "latency_ms": 1513,
+      "seq": 250
+    },
+    {
+      "at": "2026-11-10T15:45:28.043704+00:00",
+      "type": "tool_start",
+      "text": "click_link",
+      "args": {
+        "text": "合作伙伴介绍"
+      },
+      "run_id": "run-e0d52043d52a",
+      "seq": 251
+    },
+    {
+      "at": "2026-11-10T15:45:28.145108+00:00",
+      "type": "browser",
+      "text": "合作伙伴介绍 · 核验资料",
+      "actor": "agent",
+      "action": "click_link",
+      "source_id": "src-15c057778121",
+      "url": "http://127.0.0.1:8860/sample-site/conflict/partners",
+      "args": {
+        "text": "合作伙伴介绍"
+      },
+      "seq": 252
+    },
+    {
+      "at": "2026-11-10T15:45:28.155993+00:00",
+      "type": "tool_end",
+      "text": "click_link",
+      "ok": true,
+      "source_id": "src-15c057778121",
+      "run_id": "run-e0d52043d52a",
+      "seq": 253
+    },
+    {
+      "at": "2026-11-10T15:45:39.206733+00:00",
+      "type": "model_call",
+      "text": "模型已完成一次判断",
+      "run_id": "run-e0d52043d52a",
+      "turn": 5,
+      "model": "doubao-seed-2-1-pro-260628",
+      "usage": {
+        "completion_tokens": 647,
+        "prompt_tokens": 4756,
+        "total_tokens": 5403,
+        "prompt_tokens_details": {
+          "cached_tokens": 3896
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      },
+      "latency_ms": 11030,
+      "seq": 256
+    },
+    {
+      "at": "2026-11-10T15:45:39.225250+00:00",
+      "type": "tool_start",
+      "text": "propose_labels",
+      "args": {
+        "group": {
+          "value": "same_group",
+          "reason": "企业主体登记摘要载明2026-09-01起南屿互动持有清禾传媒100%股权并控制该公司，覆盖核验日2026-11-10，初筛同集团有依据。",
+          "evidence": [
+            {
+              "source_id": "src-6041635a5129",
+              "quote": "2026-09-01 生效：南屿互动有限公司 持有 清禾传媒有限公司 100% 股权并控制该公司。"
+            }
+          ]
+        },
+        "agency": {
+          "value": "confirmed",
+          "reason": "广告代理授权书明确南屿互动委托清禾传媒为App“岛屿笔记”提供广告账户操作、素材上传及投放执行服务，授权期限2025-01-01至2027-12-31，当前仍在有效期内。",
+          "evidence": [
+            {
+              "source_id": "src-95cc923b670f",
+              "quote": "委托方：南屿互动有限公司\n\n受托方：清禾传媒有限公司\n\n委托方授权受托方为 App「岛屿笔记」提供广告账户操作、素材上传及投放执行服务。\n\n授权期限：2025-01-01 至 2027-12-31。"
+            }
+          ]
+        },
+        "budget": {
+          "value": "unknown",
+          "reason": "现有材料明确说明广告代理授权不涉及最终预算审批权，企业登记摘要和合作介绍也未披露最终预算审批权或统一预算决策安排，无法确认。",
+          "evidence": [
+            {
+              "source_id": "src-95cc923b670f",
+              "quote": "本授权不涉及股权转让、公司控制关系或最终预算审批权。"
+            },
+            {
+              "source_id": "src-6041635a5129",
+              "quote": "预算审批权不在本摘要披露范围内。"
+            },
+            {
+              "source_id": "src-15c057778121",
+              "quote": "本页仅介绍商业合作，不披露股权、控制关系或预算审批权。"
+            }
+          ]
+        },
+        "missing": [
+          "缺少明确载明最终预算审批权归属或统一预算决策安排的合同、授权或治理文件。"
+        ],
+        "summary": "已核：南屿互动自2026-09-01起持有清禾传媒100%股权并控制该公司；清禾传媒现具有效广告投放执行代理授权（至2027-12-31）。未核：最终预算审批权未披露，预算关系保留未知。"
+      },
+      "run_id": "run-e0d52043d52a",
+      "seq": 257
+    },
+    {
+      "at": "2026-11-10T15:45:40.406406+00:00",
+      "type": "evidence_check",
+      "text": "独立证据验收通过",
+      "supported": true,
+      "issues": [],
+      "model": "doubao-seed-2-1-pro-260628",
+      "usage": {
+        "completion_tokens": 9,
+        "prompt_tokens": 1258,
+        "total_tokens": 1267,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      },
+      "latency_ms": 1115,
+      "seq": 258
+    },
+    {
+      "at": "2026-11-10T15:45:40.425912+00:00",
+      "type": "proposal",
+      "text": "已生成待确认的标签草稿",
+      "proposal_id": "proposal-0a28eae6ae02",
+      "seq": 259
+    },
+    {
+      "at": "2026-11-10T15:45:40.434381+00:00",
+      "type": "tool_end",
+      "text": "propose_labels",
+      "ok": true,
+      "source_id": null,
+      "run_id": "run-e0d52043d52a",
+      "seq": 260
+    },
+    {
+      "at": "2026-11-10T15:45:43.898867+00:00",
+      "type": "model_call",
+      "text": "模型已完成一次判断",
+      "run_id": "run-e0d52043d52a",
+      "turn": 6,
+      "model": "doubao-seed-2-1-pro-260628",
+      "usage": {
+        "completion_tokens": 113,
+        "prompt_tokens": 5458,
+        "total_tokens": 5571,
+        "prompt_tokens_details": {
+          "cached_tokens": 3896
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      },
+      "latency_ms": 3450,
+      "seq": 265
+    },
+    {
+      "at": "2026-11-10T15:45:43.921510+00:00",
+      "type": "message",
+      "text": "结论草稿：集团关系为同集团（2026-09-01起南屿互动持有清禾传媒100%股权并控制），代理关系已确认（授权期限2025-01-01至2027-12-31，覆盖当前核验日），预算决策关系未知（现有材料均未披露最终预算审批权归属，且授权书明确不涉及）。缺失项：需补充预算审批权或统一预算决策安排的明确文件。",
+      "role": "assistant",
+      "seq": 266
+    },
+    {
+      "at": "2026-11-10T15:45:43.944521+00:00",
+      "type": "run_finished",
+      "text": "本轮查证结束",
+      "run_id": "run-e0d52043d52a",
+      "seq": 267
+    }
+  ],
+  "sources": [
+    {
+      "id": "src-cc10d9dadd6f",
+      "session_id": "case-573981c47939",
+      "title": "客户核验资料目录 · 核验资料",
+      "url": "http://127.0.0.1:8860/sample-site/conflict/overview",
+      "text": "LINKDESK SAMPLE LIBRARY · 虚构公司与合成材料，仅用于方法验证\n南屿互动 × 清禾传媒\n客户核验资料目录\n\n待核验主体：南屿互动有限公司 与 清禾传媒有限公司。\n\n初筛信号：过去 30 天存在共同办公出口 IP，两个账户都推广 App「岛屿笔记」。初筛标签：疑似同集团。初筛信号并非已核实的公司关系。\n\n请分别核验集团、代理、预算决策三个维度。材料索引见下方。\n\n客户核验资料目录\n合作伙伴介绍\n广告代理授权书\n企业主体登记摘要",
+      "links": [
+        {
+          "text": "客户核验资料目录",
+          "url": "http://127.0.0.1:8860/sample-site/conflict/overview"
+        },
+        {
+          "text": "合作伙伴介绍",
+          "url": "http://127.0.0.1:8860/sample-site/conflict/partners"
+        },
+        {
+          "text": "广告代理授权书",
+          "url": "http://127.0.0.1:8860/sample-site/conflict/authorization"
+        },
+        {
+          "text": "企业主体登记摘要",
+          "url": "http://127.0.0.1:8860/sample-site/conflict/registry"
+        }
+      ],
+      "at": "2026-11-10T15:45:22.779846+00:00",
+      "sha256": "70ec26af64d831c2790c4c2460ccb28f02b60c82ba1bed6f5e58ca36d4cb5576",
+      "actor": "agent",
+      "kind": "web",
+      "updated_at": "2026-11-10T15:45:22.780396+00:00"
+    },
+    {
+      "id": "src-95cc923b670f",
+      "session_id": "case-573981c47939",
+      "title": "广告代理授权书 · 核验资料",
+      "url": "http://127.0.0.1:8860/sample-site/conflict/authorization",
+      "text": "LINKDESK SAMPLE LIBRARY · 虚构公司与合成材料，仅用于方法验证\n南屿互动 × 清禾传媒\n广告代理授权书\n\n委托方：南屿互动有限公司\n\n受托方：清禾传媒有限公司\n\n委托方授权受托方为 App「岛屿笔记」提供广告账户操作、素材上传及投放执行服务。\n\n授权期限：2025-01-01 至 2027-12-31。\n\n本授权不涉及股权转让、公司控制关系或最终预算审批权。\n\n文件标识：AUTH-CONFLICT-2025；发布方：南屿互动有限公司。\n\n客户核验资料目录\n合作伙伴介绍\n广告代理授权书\n企业主体登记摘要",
+      "links": [
+        {
+          "text": "客户核验资料目录",
+          "url": "http://127.0.0.1:8860/sample-site/conflict/overview"
+        },
+        {
+          "text": "合作伙伴介绍",
+          "url": "http://127.0.0.1:8860/sample-site/conflict/partners"
+        },
+        {
+          "text": "广告代理授权书",
+          "url": "http://127.0.0.1:8860/sample-site/conflict/authorization"
+        },
+        {
+          "text": "企业主体登记摘要",
+          "url": "http://127.0.0.1:8860/sample-site/conflict/registry"
+        }
+      ],
+      "at": "2026-11-10T15:45:24.570128+00:00",
+      "sha256": "08bb1509bd14cf888cfa6850db5f9455ff6052147dee34b5d9209adb7227e1bd",
+      "actor": "agent",
+      "kind": "web",
+      "updated_at": "2026-11-10T15:45:24.570154+00:00"
+    },
+    {
+      "id": "src-6041635a5129",
+      "session_id": "case-573981c47939",
+      "title": "企业主体登记摘要 · 核验资料",
+      "url": "http://127.0.0.1:8860/sample-site/conflict/registry",
+      "text": "LINKDESK SAMPLE LIBRARY · 虚构公司与合成材料，仅用于方法验证\n南屿互动 × 清禾传媒\n企业主体登记摘要\n\n主体一：南屿互动有限公司。主体二：清禾传媒有限公司。\n\n2026-09-01 生效：南屿互动有限公司 持有 清禾传媒有限公司 100% 股权并控制该公司。\n\n代理授权与集团控制关系可以同时存在。预算审批权不在本摘要披露范围内。\n\n客户核验资料目录\n合作伙伴介绍\n广告代理授权书\n企业主体登记摘要",
+      "links": [
+        {
+          "text": "客户核验资料目录",
+          "url": "http://127.0.0.1:8860/sample-site/conflict/overview"
+        },
+        {
+          "text": "合作伙伴介绍",
+          "url": "http://127.0.0.1:8860/sample-site/conflict/partners"
+        },
+        {
+          "text": "广告代理授权书",
+          "url": "http://127.0.0.1:8860/sample-site/conflict/authorization"
+        },
+        {
+          "text": "企业主体登记摘要",
+          "url": "http://127.0.0.1:8860/sample-site/conflict/registry"
+        }
+      ],
+      "at": "2026-11-10T15:45:26.468602+00:00",
+      "sha256": "4d508d97c6db6690e57c714c2dd4422f30c7ea19d6d68a76a299dd359e2584d1",
+      "actor": "agent",
+      "kind": "web",
+      "updated_at": "2026-11-10T15:45:26.468617+00:00"
+    },
+    {
+      "id": "src-15c057778121",
+      "session_id": "case-573981c47939",
+      "title": "合作伙伴介绍 · 核验资料",
+      "url": "http://127.0.0.1:8860/sample-site/conflict/partners",
+      "text": "LINKDESK SAMPLE LIBRARY · 虚构公司与合成材料，仅用于方法验证\n南屿互动 × 清禾传媒\n合作伙伴介绍\n\n南屿互动有限公司 与 清禾传媒有限公司 是长期商业合作伙伴，双方共同参与「岛屿笔记」的市场推广。\n\n本页仅介绍商业合作，不披露股权、控制关系或预算审批权。\n\n客户核验资料目录\n合作伙伴介绍\n广告代理授权书\n企业主体登记摘要",
+      "links": [
+        {
+          "text": "客户核验资料目录",
+          "url": "http://127.0.0.1:8860/sample-site/conflict/overview"
+        },
+        {
+          "text": "合作伙伴介绍",
+          "url": "http://127.0.0.1:8860/sample-site/conflict/partners"
+        },
+        {
+          "text": "广告代理授权书",
+          "url": "http://127.0.0.1:8860/sample-site/conflict/authorization"
+        },
+        {
+          "text": "企业主体登记摘要",
+          "url": "http://127.0.0.1:8860/sample-site/conflict/registry"
+        }
+      ],
+      "at": "2026-11-10T15:45:28.123988+00:00",
+      "sha256": "d1f4b6ad7838c5832123917c6658014b45feb9c499cadb7ceb34dcc5930a4763",
+      "actor": "agent",
+      "kind": "web",
+      "updated_at": "2026-11-10T15:45:28.124024+00:00"
+    }
+  ]
+}

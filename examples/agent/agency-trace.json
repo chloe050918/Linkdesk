@@ -1,0 +1,1125 @@
+{
+  "id": "case-e204b553b721",
+  "title": "澄海游戏 × 云帆营销",
+  "task": "核验两家公司当前的集团、代理和预算决策关系，检查初筛同集团标签是否有依据。",
+  "companies": [
+    "澄海游戏有限公司",
+    "云帆数字营销有限公司"
+  ],
+  "sample": "agency",
+  "skill_id": null,
+  "proposal": {
+    "missing": [
+      "两家公司完整股东、实际控制人或集团架构披露文件",
+      "关于最终预算审批权归属或是否统一预算决策的合同/授权文件"
+    ],
+    "summary": "按核验边界重审：共同IP和同App仅作线索，不能认定同集团；代理授权已核对主体、范围、有效期，当前有效；预算最终审批无证据，保留未知。代理关系可先行确认，不依赖集团或预算结论。",
+    "group": {
+      "value": "unknown",
+      "reason": "共同出口IP、同App推广仅属线索，不能单独认定同集团；现有登记摘要未披露完整股东、实际控制人或集团架构，无法确认或排除集团控制关系，初筛同集团标签缺乏明确依据。",
+      "evidence": [
+        {
+          "source_id": "src-f8b5e81f83bb",
+          "quote": "初筛信号：过去 30 天存在共同办公出口 IP，两个账户都推广 App「潮汐岛」。初筛标签：疑似同集团。初筛信号并非已核实的公司关系。",
+          "source_hash": "9d0d306d3b793c557064a737a9421a9319329a0ea666cbf73019c0a69f1eae46"
+        },
+        {
+          "source_id": "src-bf03712a4579",
+          "quote": "此摘要仅确认两个法律主体独立登记。完整股东及最终控制人信息未披露，不能据此判断是否同集团。",
+          "source_hash": "1d1ca0e16ab4f3f28f3b411c4197333de89644fd9aa1dc9c56d83a818f9cff26"
+        },
+        {
+          "source_id": "src-d0ad4e67b687",
+          "quote": "本页仅介绍商业合作，不披露股权、控制关系或预算审批权。",
+          "source_hash": "3cb567eb3cf75ce346582f5d06ea968283eb6a1a87f2a60501efb9f9d6022a0a"
+        }
+      ]
+    },
+    "agency": {
+      "value": "confirmed",
+      "reason": "已核对委托方、受托方主体，授权范围为App「潮汐岛」广告账户操作、素材上传及投放执行，授权期限2025-01-01至2027-12-31，覆盖核验日2026-11-10，可确认当前代理关系；预算审批权未明确不影响本项代理确认。",
+      "evidence": [
+        {
+          "source_id": "src-3d99faf9ca62",
+          "quote": "委托方：澄海游戏有限公司\n\n受托方：云帆数字营销有限公司\n\n委托方授权受托方为 App「潮汐岛」提供广告账户操作、素材上传及投放执行服务。\n\n授权期限：2025-01-01 至 2027-12-31。",
+          "source_hash": "7ef44c84117bdc8e7f2d9f58ea64104a6c705ea9151d05cb8623c19602c0c18e"
+        }
+      ]
+    },
+    "budget": {
+      "value": "unknown",
+      "reason": "现有授权书明确不涉及最终预算审批权，其他页面也未披露谁最终审批预算或是否统一预算决策；因无明确证据，预算关系保留未知。",
+      "evidence": [
+        {
+          "source_id": "src-3d99faf9ca62",
+          "quote": "本授权不涉及股权转让、公司控制关系或最终预算审批权。",
+          "source_hash": "7ef44c84117bdc8e7f2d9f58ea64104a6c705ea9151d05cb8623c19602c0c18e"
+        },
+        {
+          "source_id": "src-d0ad4e67b687",
+          "quote": "本页仅介绍商业合作，不披露股权、控制关系或预算审批权。",
+          "source_hash": "3cb567eb3cf75ce346582f5d06ea968283eb6a1a87f2a60501efb9f9d6022a0a"
+        }
+      ]
+    },
+    "id": "proposal-5f74f85fc39c",
+    "at": "2026-11-10T15:43:42.759268+00:00",
+    "status": "draft",
+    "verification": {
+      "supported": true,
+      "issues": []
+    }
+  },
+  "review": {
+    "id": "review-dec69071d6b6",
+    "proposal_id": "proposal-5f74f85fc39c",
+    "at": "2026-11-10T15:43:47.706404+00:00",
+    "note": "已核对合成授权原文：有效期内的广告代投。共享投放信号不证明集团关系，预算审批未知。过期授权需重新核实。",
+    "labels": {
+      "group": "unknown",
+      "agency": "confirmed",
+      "budget": "unknown"
+    }
+  },
+  "messages": [
+    {
+      "id": "msg-91016093dc8b",
+      "role": "user",
+      "content": "请开始查证，阅读索引里的来源链接，核对当前日期与授权范围，分别提交集团、代理、预算决策三个维度的标签草稿。",
+      "at": "2026-11-10T15:42:45.746916+00:00"
+    },
+    {
+      "id": "msg-fc85ed2aede1",
+      "role": "assistant",
+      "content": "查证完成：代理关系已确认——澄海游戏当前授权云帆数字营销在2025-01-01至2027-12-31内为 App「潮汐岛」提供广告账户操作、素材上传及投放执行服务，核验日在有效期内。集团控制关系证据不足；共同出口IP、同App推广、商业合作及独立登记摘要均不足以证明同集团，且未披露完整股东/最终控制人。预算决策关系亦不足；授权书明确不涉及最终预算审批权。草稿已提交待确认。",
+      "at": "2026-11-10T15:43:30.072313+00:00"
+    },
+    {
+      "id": "msg-d84cfddc3fad",
+      "role": "user",
+      "content": "请在草稿中明确我的核验边界：共同 IP 和同 App 只用来发现线索，不能认定同集团。代理授权要核对主体、授权范围和有效期；过期材料不能证明当前代理关系。预算谁最终审批没有证据就保留未知，不需要阻止代理关系先确认。请重新生成草稿。",
+      "at": "2026-11-10T15:43:31.157755+00:00"
+    },
+    {
+      "id": "msg-7609c5ab49ed",
+      "role": "assistant",
+      "content": "已按你要求重交草稿：明确共同 IP、同 App 仅为线索，不认定同集团；代理关系核对了主体、范围、有效期，当前有效，可先行确认；预算最终审批无证据则保留未知，不阻止代理确认。",
+      "at": "2026-11-10T15:43:47.244506+00:00"
+    }
+  ],
+  "events": [
+    {
+      "at": "2026-11-10T15:42:45.683974+00:00",
+      "type": "created",
+      "text": "建立核验任务",
+      "seq": 94
+    },
+    {
+      "at": "2026-11-10T15:42:45.755661+00:00",
+      "type": "message",
+      "text": "请开始查证，阅读索引里的来源链接，核对当前日期与授权范围，分别提交集团、代理、预算决策三个维度的标签草稿。",
+      "role": "user",
+      "seq": 95
+    },
+    {
+      "at": "2026-11-10T15:42:45.772388+00:00",
+      "type": "run_started",
+      "text": "开始查证",
+      "run_id": "run-399f4b7b236c",
+      "seq": 96
+    },
+    {
+      "at": "2026-11-10T15:42:48.614961+00:00",
+      "type": "model_call",
+      "text": "模型已完成一次判断",
+      "run_id": "run-399f4b7b236c",
+      "turn": 1,
+      "model": "doubao-seed-2-1-pro-260628",
+      "usage": {
+        "completion_tokens": 55,
+        "prompt_tokens": 1798,
+        "total_tokens": 1853,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      },
+      "latency_ms": 2775,
+      "seq": 97
+    },
+    {
+      "at": "2026-11-10T15:42:48.635592+00:00",
+      "type": "tool_start",
+      "text": "open_url",
+      "args": {
+        "url": "http://127.0.0.1:8860/sample-site/agency/overview"
+      },
+      "run_id": "run-399f4b7b236c",
+      "seq": 98
+    },
+    {
+      "at": "2026-11-10T15:42:49.472687+00:00",
+      "type": "browser",
+      "text": "客户核验资料目录 · 核验资料",
+      "actor": "agent",
+      "action": "open_url",
+      "source_id": "src-f8b5e81f83bb",
+      "url": "http://127.0.0.1:8860/sample-site/agency/overview",
+      "args": {
+        "url": "http://127.0.0.1:8860/sample-site/agency/overview"
+      },
+      "seq": 99
+    },
+    {
+      "at": "2026-11-10T15:42:49.478018+00:00",
+      "type": "tool_end",
+      "text": "open_url",
+      "ok": true,
+      "source_id": "src-f8b5e81f83bb",
+      "run_id": "run-399f4b7b236c",
+      "seq": 100
+    },
+    {
+      "at": "2026-11-10T15:42:51.508164+00:00",
+      "type": "model_call",
+      "text": "模型已完成一次判断",
+      "run_id": "run-399f4b7b236c",
+      "turn": 2,
+      "model": "doubao-seed-2-1-pro-260628",
+      "usage": {
+        "completion_tokens": 36,
+        "prompt_tokens": 2392,
+        "total_tokens": 2428,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      },
+      "latency_ms": 2020,
+      "seq": 101
+    },
+    {
+      "at": "2026-11-10T15:42:51.534640+00:00",
+      "type": "tool_start",
+      "text": "click_link",
+      "args": {
+        "text": "广告代理授权书"
+      },
+      "run_id": "run-399f4b7b236c",
+      "seq": 102
+    },
+    {
+      "at": "2026-11-10T15:42:51.732578+00:00",
+      "type": "browser",
+      "text": "广告代理授权书 · 核验资料",
+      "actor": "agent",
+      "action": "click_link",
+      "source_id": "src-3d99faf9ca62",
+      "url": "http://127.0.0.1:8860/sample-site/agency/authorization",
+      "args": {
+        "text": "广告代理授权书"
+      },
+      "seq": 103
+    },
+    {
+      "at": "2026-11-10T15:42:51.743147+00:00",
+      "type": "tool_end",
+      "text": "click_link",
+      "ok": true,
+      "source_id": "src-3d99faf9ca62",
+      "run_id": "run-399f4b7b236c",
+      "seq": 104
+    },
+    {
+      "at": "2026-11-10T15:42:53.647454+00:00",
+      "type": "model_call",
+      "text": "模型已完成一次判断",
+      "run_id": "run-399f4b7b236c",
+      "turn": 3,
+      "model": "doubao-seed-2-1-pro-260628",
+      "usage": {
+        "completion_tokens": 36,
+        "prompt_tokens": 2995,
+        "total_tokens": 3031,
+        "prompt_tokens_details": {
+          "cached_tokens": 1848
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      },
+      "latency_ms": 1889,
+      "seq": 105
+    },
+    {
+      "at": "2026-11-10T15:42:53.675212+00:00",
+      "type": "tool_start",
+      "text": "click_link",
+      "args": {
+        "text": "企业主体登记摘要"
+      },
+      "run_id": "run-399f4b7b236c",
+      "seq": 106
+    },
+    {
+      "at": "2026-11-10T15:42:53.849727+00:00",
+      "type": "browser",
+      "text": "企业主体登记摘要 · 核验资料",
+      "actor": "agent",
+      "action": "click_link",
+      "source_id": "src-bf03712a4579",
+      "url": "http://127.0.0.1:8860/sample-site/agency/registry",
+      "args": {
+        "text": "企业主体登记摘要"
+      },
+      "seq": 107
+    },
+    {
+      "at": "2026-11-10T15:42:53.861572+00:00",
+      "type": "tool_end",
+      "text": "click_link",
+      "ok": true,
+      "source_id": "src-bf03712a4579",
+      "run_id": "run-399f4b7b236c",
+      "seq": 108
+    },
+    {
+      "at": "2026-11-10T15:42:55.332438+00:00",
+      "type": "model_call",
+      "text": "模型已完成一次判断",
+      "run_id": "run-399f4b7b236c",
+      "turn": 4,
+      "model": "doubao-seed-2-1-pro-260628",
+      "usage": {
+        "completion_tokens": 34,
+        "prompt_tokens": 3531,
+        "total_tokens": 3565,
+        "prompt_tokens_details": {
+          "cached_tokens": 2872
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      },
+      "latency_ms": 1456,
+      "seq": 109
+    },
+    {
+      "at": "2026-11-10T15:42:55.361279+00:00",
+      "type": "tool_start",
+      "text": "click_link",
+      "args": {
+        "text": "合作伙伴介绍"
+      },
+      "run_id": "run-399f4b7b236c",
+      "seq": 110
+    },
+    {
+      "at": "2026-11-10T15:42:55.509098+00:00",
+      "type": "browser",
+      "text": "合作伙伴介绍 · 核验资料",
+      "actor": "agent",
+      "action": "click_link",
+      "source_id": "src-d0ad4e67b687",
+      "url": "http://127.0.0.1:8860/sample-site/agency/partners",
+      "args": {
+        "text": "合作伙伴介绍"
+      },
+      "seq": 111
+    },
+    {
+      "at": "2026-11-10T15:42:55.514314+00:00",
+      "type": "tool_end",
+      "text": "click_link",
+      "ok": true,
+      "source_id": "src-d0ad4e67b687",
+      "run_id": "run-399f4b7b236c",
+      "seq": 112
+    },
+    {
+      "at": "2026-11-10T15:43:06.380173+00:00",
+      "type": "model_call",
+      "text": "模型已完成一次判断",
+      "run_id": "run-399f4b7b236c",
+      "turn": 5,
+      "model": "doubao-seed-2-1-pro-260628",
+      "usage": {
+        "completion_tokens": 631,
+        "prompt_tokens": 4063,
+        "total_tokens": 4694,
+        "prompt_tokens_details": {
+          "cached_tokens": 2872
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      },
+      "latency_ms": 10857,
+      "seq": 113
+    },
+    {
+      "at": "2026-11-10T15:43:06.401693+00:00",
+      "type": "tool_start",
+      "text": "propose_labels",
+      "args": {
+        "group": {
+          "value": "unknown",
+          "reason": "现有资料仅有共同出口IP、同App推广、商业合作描述，且登记摘要明确未披露完整股东及最终控制人，不足以证明集团控制或独立。",
+          "evidence": [
+            {
+              "source_id": "src-f8b5e81f83bb",
+              "quote": "初筛信号：过去 30 天存在共同办公出口 IP，两个账户都推广 App「潮汐岛」。初筛标签：疑似同集团。初筛信号并非已核实的公司关系。"
+            },
+            {
+              "source_id": "src-bf03712a4579",
+              "quote": "此摘要仅确认两个法律主体独立登记。完整股东及最终控制人信息未披露，不能据此判断是否同集团。"
+            },
+            {
+              "source_id": "src-d0ad4e67b687",
+              "quote": "本页仅介绍商业合作，不披露股权、控制关系或预算审批权。"
+            }
+          ]
+        },
+        "agency": {
+          "value": "confirmed",
+          "reason": "广告代理授权书明确澄海游戏委托云帆数字营销为App「潮汐岛」提供广告账户操作、素材上传及投放执行服务，授权期限覆盖核验日期。",
+          "evidence": [
+            {
+              "source_id": "src-3d99faf9ca62",
+              "quote": "委托方：澄海游戏有限公司；受托方：云帆数字营销有限公司。委托方授权受托方为 App「潮汐岛」提供广告账户操作、素材上传及投放执行服务。授权期限：2025-01-01 至 2027-12-31。"
+            }
+          ]
+        },
+        "budget": {
+          "value": "unknown",
+          "reason": "授权书明确本授权不涉及最终预算审批权，其他页面也未披露预算决策是否统一。",
+          "evidence": [
+            {
+              "source_id": "src-3d99faf9ca62",
+              "quote": "本授权不涉及股权转让、公司控制关系或最终预算审批权。"
+            },
+            {
+              "source_id": "src-d0ad4e67b687",
+              "quote": "本页仅介绍商业合作，不披露股权、控制关系或预算审批权。"
+            }
+          ]
+        },
+        "missing": [
+          "两家公司的完整股东、实际控制人或集团架构披露文件",
+          "关于最终预算审批权归属或是否统一预算决策的合同/授权文件"
+        ],
+        "summary": "已核对当前日期在代理授权有效期内，可确认云帆是澄海游戏「潮汐岛」广告投放执行代理；但集团控制与预算决策均缺乏明确证据，初筛同集团标签依据不足。"
+      },
+      "run_id": "run-399f4b7b236c",
+      "seq": 114
+    },
+    {
+      "at": "2026-11-10T15:43:06.442483+00:00",
+      "type": "tool_end",
+      "text": "propose_labels",
+      "ok": false,
+      "error": "引文必须是当前案例来源中至少 8 字的连续原文",
+      "run_id": "run-399f4b7b236c",
+      "seq": 115
+    },
+    {
+      "at": "2026-11-10T15:43:14.890215+00:00",
+      "type": "model_call",
+      "text": "模型已完成一次判断",
+      "run_id": "run-399f4b7b236c",
+      "turn": 6,
+      "model": "doubao-seed-2-1-pro-260628",
+      "usage": {
+        "completion_tokens": 614,
+        "prompt_tokens": 4725,
+        "total_tokens": 5339,
+        "prompt_tokens_details": {
+          "cached_tokens": 3896
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      },
+      "latency_ms": 8420,
+      "seq": 116
+    },
+    {
+      "at": "2026-11-10T15:43:14.917033+00:00",
+      "type": "tool_start",
+      "text": "propose_labels",
+      "args": {
+        "group": {
+          "value": "unknown",
+          "reason": "现有资料仅有共同出口IP、同App推广、商业合作描述，且登记摘要明确未披露完整股东及最终控制人，不足以证明集团控制或独立。",
+          "evidence": [
+            {
+              "source_id": "src-f8b5e81f83bb",
+              "quote": "初筛信号：过去 30 天存在共同办公出口 IP，两个账户都推广 App「潮汐岛」。初筛标签：疑似同集团。初筛信号并非已核实的公司关系。"
+            },
+            {
+              "source_id": "src-bf03712a4579",
+              "quote": "此摘要仅确认两个法律主体独立登记。完整股东及最终控制人信息未披露，不能据此判断是否同集团。"
+            },
+            {
+              "source_id": "src-d0ad4e67b687",
+              "quote": "本页仅介绍商业合作，不披露股权、控制关系或预算审批权。"
+            }
+          ]
+        },
+        "agency": {
+          "value": "confirmed",
+          "reason": "广告代理授权书明确澄海游戏委托云帆数字营销为App「潮汐岛」提供广告账户操作、素材上传及投放执行服务，授权期限覆盖核验日期。",
+          "evidence": [
+            {
+              "source_id": "src-3d99faf9ca62",
+              "quote": "委托方授权受托方为 App「潮汐岛」提供广告账户操作、素材上传及投放执行服务。授权期限：2025-01-01 至 2027-12-31。"
+            }
+          ]
+        },
+        "budget": {
+          "value": "unknown",
+          "reason": "授权书明确本授权不涉及最终预算审批权，其他页面也未披露预算决策是否统一。",
+          "evidence": [
+            {
+              "source_id": "src-3d99faf9ca62",
+              "quote": "本授权不涉及股权转让、公司控制关系或最终预算审批权。"
+            },
+            {
+              "source_id": "src-d0ad4e67b687",
+              "quote": "本页仅介绍商业合作，不披露股权、控制关系或预算审批权。"
+            }
+          ]
+        },
+        "missing": [
+          "两家公司的完整股东、实际控制人或集团架构披露文件",
+          "关于最终预算审批权归属或是否统一预算决策的合同/授权文件"
+        ],
+        "summary": "已核对当前日期在代理授权有效期内，可确认云帆是澄海游戏「潮汐岛」广告投放执行代理；但集团控制与预算决策均缺乏明确证据，初筛同集团标签依据不足。"
+      },
+      "run_id": "run-399f4b7b236c",
+      "seq": 117
+    },
+    {
+      "at": "2026-11-10T15:43:14.959244+00:00",
+      "type": "tool_end",
+      "text": "propose_labels",
+      "ok": false,
+      "error": "引文必须是当前案例来源中至少 8 字的连续原文",
+      "run_id": "run-399f4b7b236c",
+      "seq": 118
+    },
+    {
+      "at": "2026-11-10T15:43:17.059268+00:00",
+      "type": "model_call",
+      "text": "模型已完成一次判断",
+      "run_id": "run-399f4b7b236c",
+      "turn": 7,
+      "model": "doubao-seed-2-1-pro-260628",
+      "usage": {
+        "completion_tokens": 62,
+        "prompt_tokens": 5370,
+        "total_tokens": 5432,
+        "prompt_tokens_details": {
+          "cached_tokens": 3896
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      },
+      "latency_ms": 2081,
+      "seq": 119
+    },
+    {
+      "at": "2026-11-10T15:43:17.071523+00:00",
+      "type": "tool_start",
+      "text": "read_source",
+      "args": {
+        "source_id": "src-3d99faf9ca62",
+        "query": "委托方授权受托方"
+      },
+      "run_id": "run-399f4b7b236c",
+      "seq": 120
+    },
+    {
+      "at": "2026-11-10T15:43:17.078066+00:00",
+      "type": "tool_end",
+      "text": "read_source",
+      "ok": true,
+      "source_id": null,
+      "run_id": "run-399f4b7b236c",
+      "seq": 121
+    },
+    {
+      "at": "2026-11-10T15:43:24.632555+00:00",
+      "type": "model_call",
+      "text": "模型已完成一次判断",
+      "run_id": "run-399f4b7b236c",
+      "turn": 8,
+      "model": "doubao-seed-2-1-pro-260628",
+      "usage": {
+        "completion_tokens": 668,
+        "prompt_tokens": 5676,
+        "total_tokens": 6344,
+        "prompt_tokens_details": {
+          "cached_tokens": 4920
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      },
+      "latency_ms": 7548,
+      "seq": 122
+    },
+    {
+      "at": "2026-11-10T15:43:24.653086+00:00",
+      "type": "tool_start",
+      "text": "propose_labels",
+      "args": {
+        "group": {
+          "value": "unknown",
+          "reason": "现有资料仅有共同出口IP、同App推广、商业合作描述，且登记摘要明确未披露完整股东及最终控制人，不足以证明集团控制或独立。",
+          "evidence": [
+            {
+              "source_id": "src-f8b5e81f83bb",
+              "quote": "初筛信号：过去 30 天存在共同办公出口 IP，两个账户都推广 App「潮汐岛」。初筛标签：疑似同集团。初筛信号并非已核实的公司关系。"
+            },
+            {
+              "source_id": "src-bf03712a4579",
+              "quote": "此摘要仅确认两个法律主体独立登记。完整股东及最终控制人信息未披露，不能据此判断是否同集团。"
+            },
+            {
+              "source_id": "src-d0ad4e67b687",
+              "quote": "本页仅介绍商业合作，不披露股权、控制关系或预算审批权。"
+            }
+          ]
+        },
+        "agency": {
+          "value": "confirmed",
+          "reason": "广告代理授权书明确澄海游戏委托云帆数字营销为App「潮汐岛」提供广告账户操作、素材上传及投放执行服务，授权期限2025-01-01至2027-12-31，覆盖核验日期2026-11-10。",
+          "evidence": [
+            {
+              "source_id": "src-3d99faf9ca62",
+              "quote": "委托方：澄海游戏有限公司\n\n受托方：云帆数字营销有限公司\n\n委托方授权受托方为 App「潮汐岛」提供广告账户操作、素材上传及投放执行服务。\n\n授权期限：2025-01-01 至 2027-12-31。"
+            }
+          ]
+        },
+        "budget": {
+          "value": "unknown",
+          "reason": "授权书明确本授权不涉及最终预算审批权，其他页面也未披露预算决策是否统一。",
+          "evidence": [
+            {
+              "source_id": "src-3d99faf9ca62",
+              "quote": "本授权不涉及股权转让、公司控制关系或最终预算审批权。"
+            },
+            {
+              "source_id": "src-d0ad4e67b687",
+              "quote": "本页仅介绍商业合作，不披露股权、控制关系或预算审批权。"
+            }
+          ]
+        },
+        "missing": [
+          "两家公司的完整股东、实际控制人或集团架构披露文件",
+          "关于最终预算审批权归属或是否统一预算决策的合同/授权文件"
+        ],
+        "summary": "已核对当前日期在代理授权有效期内，可确认云帆是澄海游戏「潮汐岛」广告投放执行代理；但集团控制与预算决策均缺乏明确证据，初筛同集团标签依据不足。"
+      },
+      "run_id": "run-399f4b7b236c",
+      "seq": 123
+    },
+    {
+      "at": "2026-11-10T15:43:26.484548+00:00",
+      "type": "evidence_check",
+      "text": "独立证据验收通过",
+      "supported": true,
+      "issues": [],
+      "model": "doubao-seed-2-1-pro-260628",
+      "usage": {
+        "completion_tokens": 9,
+        "prompt_tokens": 871,
+        "total_tokens": 880,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      },
+      "latency_ms": 1774,
+      "seq": 124
+    },
+    {
+      "at": "2026-11-10T15:43:26.515100+00:00",
+      "type": "proposal",
+      "text": "已生成待确认的标签草稿",
+      "proposal_id": "proposal-b2dc59902ee0",
+      "seq": 125
+    },
+    {
+      "at": "2026-11-10T15:43:26.524189+00:00",
+      "type": "tool_end",
+      "text": "propose_labels",
+      "ok": true,
+      "source_id": null,
+      "run_id": "run-399f4b7b236c",
+      "seq": 126
+    },
+    {
+      "at": "2026-11-10T15:43:30.052464+00:00",
+      "type": "model_call",
+      "text": "模型已完成一次判断",
+      "run_id": "run-399f4b7b236c",
+      "turn": 9,
+      "model": "doubao-seed-2-1-pro-260628",
+      "usage": {
+        "completion_tokens": 123,
+        "prompt_tokens": 6398,
+        "total_tokens": 6521,
+        "prompt_tokens_details": {
+          "cached_tokens": 4920
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      },
+      "latency_ms": 3512,
+      "seq": 127
+    },
+    {
+      "at": "2026-11-10T15:43:30.078688+00:00",
+      "type": "message",
+      "text": "查证完成：代理关系已确认——澄海游戏当前授权云帆数字营销在2025-01-01至2027-12-31内为 App「潮汐岛」提供广告账户操作、素材上传及投放执行服务，核验日在有效期内。集团控制关系证据不足；共同出口IP、同App推广、商业合作及独立登记摘要均不足以证明同集团，且未披露完整股东/最终控制人。预算决策关系亦不足；授权书明确不涉及最终预算审批权。草稿",
+      "role": "assistant",
+      "seq": 128
+    },
+    {
+      "at": "2026-11-10T15:43:30.102365+00:00",
+      "type": "run_finished",
+      "text": "本轮查证结束",
+      "run_id": "run-399f4b7b236c",
+      "seq": 129
+    },
+    {
+      "at": "2026-11-10T15:43:31.163314+00:00",
+      "type": "message",
+      "text": "请在草稿中明确我的核验边界：共同 IP 和同 App 只用来发现线索，不能认定同集团。代理授权要核对主体、授权范围和有效期；过期材料不能证明当前代理关系。预算谁最终审批没有证据就保留未知，不需要阻止代理关系先确认。请重新生成草稿。",
+      "role": "user",
+      "seq": 133
+    },
+    {
+      "at": "2026-11-10T15:43:31.172160+00:00",
+      "type": "run_started",
+      "text": "开始查证",
+      "run_id": "run-650a568a7918",
+      "seq": 134
+    },
+    {
+      "at": "2026-11-10T15:43:42.680076+00:00",
+      "type": "model_call",
+      "text": "模型已完成一次判断",
+      "run_id": "run-650a568a7918",
+      "turn": 1,
+      "model": "doubao-seed-2-1-pro-260628",
+      "usage": {
+        "completion_tokens": 718,
+        "prompt_tokens": 3294,
+        "total_tokens": 4012,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      },
+      "latency_ms": 11440,
+      "seq": 141
+    },
+    {
+      "at": "2026-11-10T15:43:42.706550+00:00",
+      "type": "tool_start",
+      "text": "propose_labels",
+      "args": {
+        "group": {
+          "value": "unknown",
+          "reason": "共同出口IP、同App推广仅属线索，不能单独认定同集团；现有登记摘要未披露完整股东、实际控制人或集团架构，无法确认或排除集团控制关系，初筛同集团标签缺乏明确依据。",
+          "evidence": [
+            {
+              "source_id": "src-f8b5e81f83bb",
+              "quote": "初筛信号：过去 30 天存在共同办公出口 IP，两个账户都推广 App「潮汐岛」。初筛标签：疑似同集团。初筛信号并非已核实的公司关系。"
+            },
+            {
+              "source_id": "src-bf03712a4579",
+              "quote": "此摘要仅确认两个法律主体独立登记。完整股东及最终控制人信息未披露，不能据此判断是否同集团。"
+            },
+            {
+              "source_id": "src-d0ad4e67b687",
+              "quote": "本页仅介绍商业合作，不披露股权、控制关系或预算审批权。"
+            }
+          ]
+        },
+        "agency": {
+          "value": "confirmed",
+          "reason": "已核对委托方、受托方主体，授权范围为App「潮汐岛」广告账户操作、素材上传及投放执行，授权期限2025-01-01至2027-12-31，覆盖核验日2026-11-10，可确认当前代理关系；预算审批权未明确不影响本项代理确认。",
+          "evidence": [
+            {
+              "source_id": "src-3d99faf9ca62",
+              "quote": "委托方：澄海游戏有限公司\n\n受托方：云帆数字营销有限公司\n\n委托方授权受托方为 App「潮汐岛」提供广告账户操作、素材上传及投放执行服务。\n\n授权期限：2025-01-01 至 2027-12-31。"
+            }
+          ]
+        },
+        "budget": {
+          "value": "unknown",
+          "reason": "现有授权书明确不涉及最终预算审批权，其他页面也未披露谁最终审批预算或是否统一预算决策；因无明确证据，预算关系保留未知。",
+          "evidence": [
+            {
+              "source_id": "src-3d99faf9ca62",
+              "quote": "本授权不涉及股权转让、公司控制关系或最终预算审批权。"
+            },
+            {
+              "source_id": "src-d0ad4e67b687",
+              "quote": "本页仅介绍商业合作，不披露股权、控制关系或预算审批权。"
+            }
+          ]
+        },
+        "missing": [
+          "两家公司完整股东、实际控制人或集团架构披露文件",
+          "关于最终预算审批权归属或是否统一预算决策的合同/授权文件"
+        ],
+        "summary": "按核验边界重审：共同IP和同App仅作线索，不能认定同集团；代理授权已核对主体、范围、有效期，当前有效；预算最终审批无证据，保留未知。代理关系可先行确认，不依赖集团或预算结论。"
+      },
+      "run_id": "run-650a568a7918",
+      "seq": 142
+    },
+    {
+      "at": "2026-11-10T15:43:43.973769+00:00",
+      "type": "evidence_check",
+      "text": "独立证据验收通过",
+      "supported": true,
+      "issues": [],
+      "model": "doubao-seed-2-1-pro-260628",
+      "usage": {
+        "completion_tokens": 9,
+        "prompt_tokens": 885,
+        "total_tokens": 894,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      },
+      "latency_ms": 1192,
+      "seq": 143
+    },
+    {
+      "at": "2026-11-10T15:43:44.003954+00:00",
+      "type": "proposal",
+      "text": "已生成待确认的标签草稿",
+      "proposal_id": "proposal-5f74f85fc39c",
+      "seq": 144
+    },
+    {
+      "at": "2026-11-10T15:43:44.013408+00:00",
+      "type": "tool_end",
+      "text": "propose_labels",
+      "ok": true,
+      "source_id": null,
+      "run_id": "run-650a568a7918",
+      "seq": 145
+    },
+    {
+      "at": "2026-11-10T15:43:47.218122+00:00",
+      "type": "model_call",
+      "text": "模型已完成一次判断",
+      "run_id": "run-650a568a7918",
+      "turn": 2,
+      "model": "doubao-seed-2-1-pro-260628",
+      "usage": {
+        "completion_tokens": 55,
+        "prompt_tokens": 4068,
+        "total_tokens": 4123,
+        "prompt_tokens_details": {
+          "cached_tokens": 2872
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      },
+      "latency_ms": 3187,
+      "seq": 146
+    },
+    {
+      "at": "2026-11-10T15:43:47.256817+00:00",
+      "type": "message",
+      "text": "已按你要求重交草稿：明确共同 IP、同 App 仅为线索，不认定同集团；代理关系核对了主体、范围、有效期，当前有效，可先行确认；预算最终审批无证据则保留未知，不阻止代理确认。",
+      "role": "assistant",
+      "seq": 147
+    },
+    {
+      "at": "2026-11-10T15:43:47.283410+00:00",
+      "type": "run_finished",
+      "text": "本轮查证结束",
+      "run_id": "run-650a568a7918",
+      "seq": 148
+    },
+    {
+      "at": "2026-11-10T15:43:47.719088+00:00",
+      "type": "review",
+      "text": "专家已确认本案结果",
+      "actor": "expert",
+      "review": {
+        "id": "review-dec69071d6b6",
+        "proposal_id": "proposal-5f74f85fc39c",
+        "at": "2026-11-10T15:43:47.706404+00:00",
+        "note": "已核对合成授权原文：有效期内的广告代投。共享投放信号不证明集团关系，预算审批未知。过期授权需重新核实。",
+        "labels": {
+          "group": "unknown",
+          "agency": "confirmed",
+          "budget": "unknown"
+        }
+      },
+      "seq": 149
+    },
+    {
+      "at": "2026-11-10T15:44:06.390343+00:00",
+      "type": "skill_created",
+      "text": "已提炼方法草稿：三维关系标签核验法",
+      "skill_id": "skill-43f6c6e905cf",
+      "model": "doubao-seed-2-1-pro-260628",
+      "usage": {
+        "completion_tokens": 597,
+        "prompt_tokens": 6146,
+        "total_tokens": 6743,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      },
+      "latency_ms": 18636,
+      "seq": 154
+    },
+    {
+      "at": "2026-11-10T15:53:38.887292+00:00",
+      "type": "browser",
+      "text": "广告代理授权书 · 核验资料",
+      "actor": "expert",
+      "action": "open_url",
+      "source_id": "src-1325940b6a83",
+      "url": "http://127.0.0.1:8860/sample-site/agency/authorization",
+      "args": {
+        "url": "http://127.0.0.1:8860/sample-site/agency/authorization"
+      },
+      "seq": 323
+    },
+    {
+      "at": "2026-11-10T15:54:35.091947+00:00",
+      "type": "browser",
+      "text": "合作伙伴介绍 · 核验资料",
+      "actor": "expert",
+      "action": "click",
+      "source_id": "src-8369f99d9e8c",
+      "url": "http://127.0.0.1:8860/sample-site/agency/partners",
+      "args": {
+        "x": 240,
+        "y": 594
+      },
+      "seq": 324
+    },
+    {
+      "at": "2026-11-10T15:55:16.762292+00:00",
+      "type": "skill_edited",
+      "text": "专家修订了查证方法",
+      "actor": "expert",
+      "skill_id": "skill-c404a7991fe8",
+      "parent_id": "skill-43f6c6e905cf",
+      "seq": 325
+    }
+  ],
+  "sources": [
+    {
+      "id": "src-f8b5e81f83bb",
+      "session_id": "case-e204b553b721",
+      "title": "客户核验资料目录 · 核验资料",
+      "url": "http://127.0.0.1:8860/sample-site/agency/overview",
+      "text": "LINKDESK SAMPLE LIBRARY · 虚构公司与合成材料，仅用于方法验证\n澄海游戏 × 云帆营销\n客户核验资料目录\n\n待核验主体：澄海游戏有限公司 与 云帆数字营销有限公司。\n\n初筛信号：过去 30 天存在共同办公出口 IP，两个账户都推广 App「潮汐岛」。初筛标签：疑似同集团。初筛信号并非已核实的公司关系。\n\n请分别核验集团、代理、预算决策三个维度。材料索引见下方。\n\n客户核验资料目录\n合作伙伴介绍\n广告代理授权书\n企业主体登记摘要",
+      "links": [
+        {
+          "text": "客户核验资料目录",
+          "url": "http://127.0.0.1:8860/sample-site/agency/overview"
+        },
+        {
+          "text": "合作伙伴介绍",
+          "url": "http://127.0.0.1:8860/sample-site/agency/partners"
+        },
+        {
+          "text": "广告代理授权书",
+          "url": "http://127.0.0.1:8860/sample-site/agency/authorization"
+        },
+        {
+          "text": "企业主体登记摘要",
+          "url": "http://127.0.0.1:8860/sample-site/agency/registry"
+        }
+      ],
+      "at": "2026-11-10T15:42:49.453755+00:00",
+      "sha256": "9d0d306d3b793c557064a737a9421a9319329a0ea666cbf73019c0a69f1eae46",
+      "actor": "agent",
+      "kind": "web",
+      "updated_at": "2026-11-10T15:42:49.453834+00:00"
+    },
+    {
+      "id": "src-3d99faf9ca62",
+      "session_id": "case-e204b553b721",
+      "title": "广告代理授权书 · 核验资料",
+      "url": "http://127.0.0.1:8860/sample-site/agency/authorization",
+      "text": "LINKDESK SAMPLE LIBRARY · 虚构公司与合成材料，仅用于方法验证\n澄海游戏 × 云帆营销\n广告代理授权书\n\n委托方：澄海游戏有限公司\n\n受托方：云帆数字营销有限公司\n\n委托方授权受托方为 App「潮汐岛」提供广告账户操作、素材上传及投放执行服务。\n\n授权期限：2025-01-01 至 2027-12-31。\n\n本授权不涉及股权转让、公司控制关系或最终预算审批权。\n\n文件标识：AUTH-AGENCY-2025；发布方：澄海游戏有限公司。\n\n客户核验资料目录\n合作伙伴介绍\n广告代理授权书\n企业主体登记摘要",
+      "links": [
+        {
+          "text": "客户核验资料目录",
+          "url": "http://127.0.0.1:8860/sample-site/agency/overview"
+        },
+        {
+          "text": "合作伙伴介绍",
+          "url": "http://127.0.0.1:8860/sample-site/agency/partners"
+        },
+        {
+          "text": "广告代理授权书",
+          "url": "http://127.0.0.1:8860/sample-site/agency/authorization"
+        },
+        {
+          "text": "企业主体登记摘要",
+          "url": "http://127.0.0.1:8860/sample-site/agency/registry"
+        }
+      ],
+      "at": "2026-11-10T15:42:51.706010+00:00",
+      "sha256": "7ef44c84117bdc8e7f2d9f58ea64104a6c705ea9151d05cb8623c19602c0c18e",
+      "actor": "agent",
+      "kind": "web",
+      "updated_at": "2026-11-10T15:42:51.706027+00:00"
+    },
+    {
+      "id": "src-bf03712a4579",
+      "session_id": "case-e204b553b721",
+      "title": "企业主体登记摘要 · 核验资料",
+      "url": "http://127.0.0.1:8860/sample-site/agency/registry",
+      "text": "LINKDESK SAMPLE LIBRARY · 虚构公司与合成材料，仅用于方法验证\n澄海游戏 × 云帆营销\n企业主体登记摘要\n\n主体一：澄海游戏有限公司。主体二：云帆数字营销有限公司。\n\n此摘要仅确认两个法律主体独立登记。完整股东及最终控制人信息未披露，不能据此判断是否同集团。\n\n客户核验资料目录\n合作伙伴介绍\n广告代理授权书\n企业主体登记摘要",
+      "links": [
+        {
+          "text": "客户核验资料目录",
+          "url": "http://127.0.0.1:8860/sample-site/agency/overview"
+        },
+        {
+          "text": "合作伙伴介绍",
+          "url": "http://127.0.0.1:8860/sample-site/agency/partners"
+        },
+        {
+          "text": "广告代理授权书",
+          "url": "http://127.0.0.1:8860/sample-site/agency/authorization"
+        },
+        {
+          "text": "企业主体登记摘要",
+          "url": "http://127.0.0.1:8860/sample-site/agency/registry"
+        }
+      ],
+      "at": "2026-11-10T15:42:53.823032+00:00",
+      "sha256": "1d1ca0e16ab4f3f28f3b411c4197333de89644fd9aa1dc9c56d83a818f9cff26",
+      "actor": "agent",
+      "kind": "web",
+      "updated_at": "2026-11-10T15:42:53.823048+00:00"
+    },
+    {
+      "id": "src-d0ad4e67b687",
+      "session_id": "case-e204b553b721",
+      "title": "合作伙伴介绍 · 核验资料",
+      "url": "http://127.0.0.1:8860/sample-site/agency/partners",
+      "text": "LINKDESK SAMPLE LIBRARY · 虚构公司与合成材料，仅用于方法验证\n澄海游戏 × 云帆营销\n合作伙伴介绍\n\n澄海游戏有限公司 与 云帆数字营销有限公司 是长期商业合作伙伴，双方共同参与「潮汐岛」的市场推广。\n\n本页仅介绍商业合作，不披露股权、控制关系或预算审批权。\n\n客户核验资料目录\n合作伙伴介绍\n广告代理授权书\n企业主体登记摘要",
+      "links": [
+        {
+          "text": "客户核验资料目录",
+          "url": "http://127.0.0.1:8860/sample-site/agency/overview"
+        },
+        {
+          "text": "合作伙伴介绍",
+          "url": "http://127.0.0.1:8860/sample-site/agency/partners"
+        },
+        {
+          "text": "广告代理授权书",
+          "url": "http://127.0.0.1:8860/sample-site/agency/authorization"
+        },
+        {
+          "text": "企业主体登记摘要",
+          "url": "http://127.0.0.1:8860/sample-site/agency/registry"
+        }
+      ],
+      "at": "2026-11-10T15:42:55.487420+00:00",
+      "sha256": "3cb567eb3cf75ce346582f5d06ea968283eb6a1a87f2a60501efb9f9d6022a0a",
+      "actor": "agent",
+      "kind": "web",
+      "updated_at": "2026-11-10T15:42:55.487443+00:00"
+    },
+    {
+      "id": "src-1325940b6a83",
+      "session_id": "case-e204b553b721",
+      "title": "广告代理授权书 · 核验资料",
+      "url": "http://127.0.0.1:8860/sample-site/agency/authorization",
+      "text": "LINKDESK SAMPLE LIBRARY · 虚构公司与合成材料，仅用于方法验证\n澄海游戏 × 云帆营销\n广告代理授权书\n\n委托方：澄海游戏有限公司\n\n受托方：云帆数字营销有限公司\n\n委托方授权受托方为 App「潮汐岛」提供广告账户操作、素材上传及投放执行服务。\n\n授权期限：2025-01-01 至 2027-12-31。\n\n本授权不涉及股权转让、公司控制关系或最终预算审批权。\n\n文件标识：AUTH-AGENCY-2025；发布方：澄海游戏有限公司。\n\n客户核验资料目录\n合作伙伴介绍\n广告代理授权书\n企业主体登记摘要",
+      "links": [
+        {
+          "text": "客户核验资料目录",
+          "url": "http://127.0.0.1:8860/sample-site/agency/overview"
+        },
+        {
+          "text": "合作伙伴介绍",
+          "url": "http://127.0.0.1:8860/sample-site/agency/partners"
+        },
+        {
+          "text": "广告代理授权书",
+          "url": "http://127.0.0.1:8860/sample-site/agency/authorization"
+        },
+        {
+          "text": "企业主体登记摘要",
+          "url": "http://127.0.0.1:8860/sample-site/agency/registry"
+        }
+      ],
+      "at": "2026-11-10T15:53:38.790727+00:00",
+      "sha256": "7ef44c84117bdc8e7f2d9f58ea64104a6c705ea9151d05cb8623c19602c0c18e",
+      "actor": "expert",
+      "kind": "web",
+      "updated_at": "2026-11-10T15:53:38.796952+00:00"
+    },
+    {
+      "id": "src-8369f99d9e8c",
+      "session_id": "case-e204b553b721",
+      "title": "合作伙伴介绍 · 核验资料",
+      "url": "http://127.0.0.1:8860/sample-site/agency/partners",
+      "text": "LINKDESK SAMPLE LIBRARY · 虚构公司与合成材料，仅用于方法验证\n澄海游戏 × 云帆营销\n合作伙伴介绍\n\n澄海游戏有限公司 与 云帆数字营销有限公司 是长期商业合作伙伴，双方共同参与「潮汐岛」的市场推广。\n\n本页仅介绍商业合作，不披露股权、控制关系或预算审批权。\n\n客户核验资料目录\n合作伙伴介绍\n广告代理授权书\n企业主体登记摘要",
+      "links": [
+        {
+          "text": "客户核验资料目录",
+          "url": "http://127.0.0.1:8860/sample-site/agency/overview"
+        },
+        {
+          "text": "合作伙伴介绍",
+          "url": "http://127.0.0.1:8860/sample-site/agency/partners"
+        },
+        {
+          "text": "广告代理授权书",
+          "url": "http://127.0.0.1:8860/sample-site/agency/authorization"
+        },
+        {
+          "text": "企业主体登记摘要",
+          "url": "http://127.0.0.1:8860/sample-site/agency/registry"
+        }
+      ],
+      "at": "2026-11-10T15:54:35.068645+00:00",
+      "sha256": "3cb567eb3cf75ce346582f5d06ea968283eb6a1a87f2a60501efb9f9d6022a0a",
+      "actor": "expert",
+      "kind": "web",
+      "updated_at": "2026-11-10T15:54:35.068678+00:00"
+    }
+  ]
+}

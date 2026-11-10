@@ -1,0 +1,651 @@
+{
+  "id": "case-b77231bd63fd",
+  "title": "北川科技 × 远山传媒",
+  "task": "核验两家公司当前的集团、代理和预算决策关系，检查初筛同集团标签是否有依据。",
+  "companies": [
+    "北川科技有限公司",
+    "远山传媒有限公司"
+  ],
+  "sample": "expired",
+  "skill_id": "skill-43f6c6e905cf",
+  "proposal": {
+    "missing": [
+      "完整股东、实际控制人或集团架构披露材料",
+      "覆盖2026-11-10且主体、范围清晰的当前有效代理授权文件",
+      "最终预算审批权归属或统一预算决策安排的明确条款"
+    ],
+    "summary": "初筛“同集团”缺乏控制证据：共同IP、同App推广、合作关系仅为线索，登记摘要未披露股东/控制人。现有代理授权已于2025-06-30过期，当前代理无法确认。预算审批权无明确证据，三项均保留未知；其中代理因过期不能确认当前有效授权。",
+    "group": {
+      "value": "unknown",
+      "reason": "现有材料仅有共同出口IP、共同推广App、合作伙伴关系及独立登记摘要，均不能证明股权或实际控制关系；完整股东及最终控制人未披露，初筛同集团缺乏依据。",
+      "evidence": [
+        {
+          "source_id": "src-0a111299364a",
+          "quote": "初筛信号：过去 30 天存在共同办公出口 IP，两个账户都推广 App「山间集市」。初筛标签：疑似同集团。初筛信号并非已核实的公司关系。",
+          "source_hash": "a7aee64275f0fde2235d72f8bfddf61634f336e60b956c58bee60c1f535e9915"
+        },
+        {
+          "source_id": "src-d87368594098",
+          "quote": "北川科技有限公司 与 远山传媒有限公司 是长期商业合作伙伴，双方共同参与「山间集市」的市场推广。",
+          "source_hash": "16ee1cc7878d2ec9f58fd662b8dbecf7559eaf7bddb88ea6b015d6214595c2af"
+        },
+        {
+          "source_id": "src-2a8318c268af",
+          "quote": "此摘要仅确认两个法律主体独立登记。完整股东及最终控制人信息未披露，不能据此判断是否同集团。",
+          "source_hash": "30c650f5c1b1f7094afa7585aa4f6abfd2b62f87b1dc68cd04ba52d4c63eadff"
+        }
+      ]
+    },
+    "agency": {
+      "value": "unknown",
+      "reason": "查到的授权书仅覆盖2025-01-01至2025-06-30，核验日2026-11-10已过期，只能证明历史授权，不能确认当前代理，也不足以证明当前不存在任何代理关系。",
+      "evidence": [
+        {
+          "source_id": "src-94d5106ee0f2",
+          "quote": "委托方：北川科技有限公司\n\n受托方：远山传媒有限公司\n\n委托方授权受托方为 App「山间集市」提供广告账户操作、素材上传及投放执行服务。\n\n授权期限：2025-01-01 至 2025-06-30。",
+          "source_hash": "dac0cf4af68134f65205b3bbee783fe024c95998df55a08985d584a3f0a5ca5e"
+        }
+      ]
+    },
+    "budget": {
+      "value": "unknown",
+      "reason": "授权书明确不涉及最终预算审批权，合作页也不披露预算审批权，缺少统一预算决策或最终审批归属的明确条款。",
+      "evidence": [
+        {
+          "source_id": "src-94d5106ee0f2",
+          "quote": "本授权不涉及股权转让、公司控制关系或最终预算审批权。",
+          "source_hash": "dac0cf4af68134f65205b3bbee783fe024c95998df55a08985d584a3f0a5ca5e"
+        },
+        {
+          "source_id": "src-d87368594098",
+          "quote": "本页仅介绍商业合作，不披露股权、控制关系或预算审批权。",
+          "source_hash": "16ee1cc7878d2ec9f58fd662b8dbecf7559eaf7bddb88ea6b015d6214595c2af"
+        }
+      ]
+    },
+    "id": "proposal-c47853033cdf",
+    "at": "2026-11-10T15:45:14.019533+00:00",
+    "status": "draft",
+    "verification": {
+      "supported": true,
+      "issues": [],
+      "mode": "all_unknown"
+    }
+  },
+  "review": null,
+  "messages": [
+    {
+      "id": "msg-0d52b39def17",
+      "role": "user",
+      "content": "请开始查证，阅读索引里的来源链接，核对当前日期与授权范围，分别提交集团、代理、预算决策三个维度的标签草稿。",
+      "at": "2026-11-10T15:44:37.530213+00:00"
+    },
+    {
+      "id": "msg-f65e74448dfd",
+      "role": "assistant",
+      "content": "已完成初核并提交草稿：集团关系未知，初筛“同集团”仅有共同IP、同App推广、合作线索，无股权/实际控制人证据；代理关系未知，查到的广告授权期限为2025-01-01至2025-06-30，已早于2026-11-10，不能确认当前代理；预算决策未知，材料明确不涉及最终预算审批权。需补充控制架构、当前有效授权、预算审批条款。",
+      "at": "2026-11-10T15:45:18.105037+00:00"
+    }
+  ],
+  "events": [
+    {
+      "at": "2026-11-10T15:44:37.430830+00:00",
+      "type": "created",
+      "text": "建立核验任务",
+      "seq": 193
+    },
+    {
+      "at": "2026-11-10T15:44:37.537941+00:00",
+      "type": "message",
+      "text": "请开始查证，阅读索引里的来源链接，核对当前日期与授权范围，分别提交集团、代理、预算决策三个维度的标签草稿。",
+      "role": "user",
+      "seq": 194
+    },
+    {
+      "at": "2026-11-10T15:44:37.545790+00:00",
+      "type": "run_started",
+      "text": "开始查证",
+      "run_id": "run-6873991885f1",
+      "seq": 195
+    },
+    {
+      "at": "2026-11-10T15:44:37.570282+00:00",
+      "type": "skill_used",
+      "text": "应用方法：三维关系标签核验法",
+      "skill_id": "skill-43f6c6e905cf",
+      "version": 1,
+      "seq": 196
+    },
+    {
+      "at": "2026-11-10T15:44:39.573473+00:00",
+      "type": "model_call",
+      "text": "模型已完成一次判断",
+      "run_id": "run-6873991885f1",
+      "turn": 1,
+      "model": "doubao-seed-2-1-pro-260628",
+      "usage": {
+        "completion_tokens": 56,
+        "prompt_tokens": 2442,
+        "total_tokens": 2498,
+        "prompt_tokens_details": {
+          "cached_tokens": 1848
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      },
+      "latency_ms": 1989,
+      "seq": 200
+    },
+    {
+      "at": "2026-11-10T15:44:39.590195+00:00",
+      "type": "tool_start",
+      "text": "open_url",
+      "args": {
+        "url": "http://127.0.0.1:8860/sample-site/expired/overview"
+      },
+      "run_id": "run-6873991885f1",
+      "seq": 201
+    },
+    {
+      "at": "2026-11-10T15:44:39.864085+00:00",
+      "type": "browser",
+      "text": "客户核验资料目录 · 核验资料",
+      "actor": "agent",
+      "action": "open_url",
+      "source_id": "src-0a111299364a",
+      "url": "http://127.0.0.1:8860/sample-site/expired/overview",
+      "args": {
+        "url": "http://127.0.0.1:8860/sample-site/expired/overview"
+      },
+      "seq": 202
+    },
+    {
+      "at": "2026-11-10T15:44:39.874385+00:00",
+      "type": "tool_end",
+      "text": "open_url",
+      "ok": true,
+      "source_id": "src-0a111299364a",
+      "run_id": "run-6873991885f1",
+      "seq": 203
+    },
+    {
+      "at": "2026-11-10T15:44:41.807526+00:00",
+      "type": "model_call",
+      "text": "模型已完成一次判断",
+      "run_id": "run-6873991885f1",
+      "turn": 2,
+      "model": "doubao-seed-2-1-pro-260628",
+      "usage": {
+        "completion_tokens": 82,
+        "prompt_tokens": 3040,
+        "total_tokens": 3122,
+        "prompt_tokens_details": {
+          "cached_tokens": 1848
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      },
+      "latency_ms": 1912,
+      "seq": 206
+    },
+    {
+      "at": "2026-11-10T15:44:41.830759+00:00",
+      "type": "tool_start",
+      "text": "click_link",
+      "args": {
+        "text": "广告代理授权书"
+      },
+      "run_id": "run-6873991885f1",
+      "seq": 207
+    },
+    {
+      "at": "2026-11-10T15:44:41.990284+00:00",
+      "type": "browser",
+      "text": "广告代理授权书 · 核验资料",
+      "actor": "agent",
+      "action": "click_link",
+      "source_id": "src-94d5106ee0f2",
+      "url": "http://127.0.0.1:8860/sample-site/expired/authorization",
+      "args": {
+        "text": "广告代理授权书"
+      },
+      "seq": 208
+    },
+    {
+      "at": "2026-11-10T15:44:42.001040+00:00",
+      "type": "tool_end",
+      "text": "click_link",
+      "ok": true,
+      "source_id": "src-94d5106ee0f2",
+      "run_id": "run-6873991885f1",
+      "seq": 209
+    },
+    {
+      "at": "2026-11-10T15:44:42.020635+00:00",
+      "type": "tool_start",
+      "text": "click_link",
+      "args": {
+        "text": "企业主体登记摘要"
+      },
+      "run_id": "run-6873991885f1",
+      "seq": 210
+    },
+    {
+      "at": "2026-11-10T15:44:42.132106+00:00",
+      "type": "browser",
+      "text": "企业主体登记摘要 · 核验资料",
+      "actor": "agent",
+      "action": "click_link",
+      "source_id": "src-2a8318c268af",
+      "url": "http://127.0.0.1:8860/sample-site/expired/registry",
+      "args": {
+        "text": "企业主体登记摘要"
+      },
+      "seq": 211
+    },
+    {
+      "at": "2026-11-10T15:44:42.139900+00:00",
+      "type": "tool_end",
+      "text": "click_link",
+      "ok": true,
+      "source_id": "src-2a8318c268af",
+      "run_id": "run-6873991885f1",
+      "seq": 212
+    },
+    {
+      "at": "2026-11-10T15:44:42.153961+00:00",
+      "type": "tool_start",
+      "text": "click_link",
+      "args": {
+        "text": "合作伙伴介绍"
+      },
+      "run_id": "run-6873991885f1",
+      "seq": 213
+    },
+    {
+      "at": "2026-11-10T15:44:42.272721+00:00",
+      "type": "browser",
+      "text": "合作伙伴介绍 · 核验资料",
+      "actor": "agent",
+      "action": "click_link",
+      "source_id": "src-d87368594098",
+      "url": "http://127.0.0.1:8860/sample-site/expired/partners",
+      "args": {
+        "text": "合作伙伴介绍"
+      },
+      "seq": 214
+    },
+    {
+      "at": "2026-11-10T15:44:42.283077+00:00",
+      "type": "tool_end",
+      "text": "click_link",
+      "ok": true,
+      "source_id": "src-d87368594098",
+      "run_id": "run-6873991885f1",
+      "seq": 215
+    },
+    {
+      "at": "2026-11-10T15:44:54.714731+00:00",
+      "type": "model_call",
+      "text": "模型已完成一次判断",
+      "run_id": "run-6873991885f1",
+      "turn": 3,
+      "model": "doubao-seed-2-1-pro-260628",
+      "usage": {
+        "completion_tokens": 704,
+        "prompt_tokens": 4674,
+        "total_tokens": 5378,
+        "prompt_tokens_details": {
+          "cached_tokens": 2872
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      },
+      "latency_ms": 12413,
+      "seq": 220
+    },
+    {
+      "at": "2026-11-10T15:44:54.740630+00:00",
+      "type": "tool_start",
+      "text": "propose_labels",
+      "args": {
+        "group": {
+          "value": "unknown",
+          "reason": "现有材料仅有共同出口IP、共同推广App、合作伙伴关系及独立登记摘要，均不能证明股权或实际控制关系；完整股东及最终控制人未披露。",
+          "evidence": [
+            {
+              "source_id": "src-0a111299364a",
+              "quote": "初筛信号：过去 30 天存在共同办公出口 IP，两个账户都推广 App「山间集市」。初筛标签：疑似同集团。初筛信号并非已核实的公司关系。"
+            },
+            {
+              "source_id": "src-d87368594098",
+              "quote": "北川科技有限公司 与 远山传媒有限公司 是长期商业合作伙伴，双方共同参与「山间集市」的市场推广。"
+            },
+            {
+              "source_id": "src-2a8318c268af",
+              "quote": "此摘要仅确认两个法律主体独立登记。完整股东及最终控制人信息未披露，不能据此判断是否同集团。"
+            }
+          ]
+        },
+        "agency": {
+          "value": "none",
+          "reason": "授权书明确北川授权远山进行广告账户操作、素材上传及投放执行，但授权期限为2025-01-01至2025-06-30，核验日2026-11-10已过期，不能确认当前代理关系。",
+          "evidence": [
+            {
+              "source_id": "src-94d5106ee0f2",
+              "quote": "委托方：北川科技有限公司\n\n受托方：远山传媒有限公司\n\n委托方授权受托方为 App「山间集市」提供广告账户操作、素材上传及投放执行服务。\n\n授权期限：2025-01-01 至 2025-06-30。"
+            }
+          ]
+        },
+        "budget": {
+          "value": "unknown",
+          "reason": "现有材料明确写明授权不涉及最终预算审批权，合作页也不披露预算审批权，缺少统一预算决策或最终审批归属的证据。",
+          "evidence": [
+            {
+              "source_id": "src-94d5106ee0f2",
+              "quote": "本授权不涉及股权转让、公司控制关系或最终预算审批权。"
+            },
+            {
+              "source_id": "src-d87368594098",
+              "quote": "本页仅介绍商业合作，不披露股权、控制关系或预算审批权。"
+            }
+          ]
+        },
+        "missing": [
+          "完整股东及实际控制人/集团架构披露材料",
+          "覆盖2026-11-10的有效代理授权文件",
+          "最终预算审批权或统一预算决策安排的明确条款"
+        ],
+        "summary": "初筛“疑似同集团”无充分依据：共同IP、同App推广、合作关系仅为线索，登记摘要也未披露控制关系。代理授权已过期，当前代理不成立。预算审批权无明确证据，保留未知。"
+      },
+      "run_id": "run-6873991885f1",
+      "seq": 221
+    },
+    {
+      "at": "2026-11-10T15:44:59.768972+00:00",
+      "type": "evidence_check",
+      "text": "标签依据不足，退回修正",
+      "supported": false,
+      "issues": [
+        "agency 标签取值为 none 不被支持：现有证据仅为2025-01-01至2025-06-30的过期授权书，只能证明该历史期间存在代理授权，不能证明核验日2026-11-10当前不存在任何代理关系；缺少当前代理关系的证据时，该维度应标记为 unknown，不能确定为 none。"
+      ],
+      "model": "doubao-seed-2-1-pro-260628",
+      "usage": {
+        "completion_tokens": 99,
+        "prompt_tokens": 862,
+        "total_tokens": 961,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      },
+      "latency_ms": 4965,
+      "seq": 222
+    },
+    {
+      "at": "2026-11-10T15:44:59.783150+00:00",
+      "type": "tool_end",
+      "text": "propose_labels",
+      "ok": false,
+      "error": "证据验收未通过：agency 标签取值为 none 不被支持：现有证据仅为2025-01-01至2025-06-30的过期授权书，只能证明该历史期间存在代理授权，不能证明核验日2026-11-10当前不存在任何代理关系；缺少当前代理关系的证据时，该维度应标记为 unknown，不能确定为 none。。请修正不受支持的标签为 unknown，或补查直接证据。",
+      "run_id": "run-6873991885f1",
+      "seq": 223
+    },
+    {
+      "at": "2026-11-10T15:45:13.921604+00:00",
+      "type": "model_call",
+      "text": "模型已完成一次判断",
+      "run_id": "run-6873991885f1",
+      "turn": 4,
+      "model": "doubao-seed-2-1-pro-260628",
+      "usage": {
+        "completion_tokens": 738,
+        "prompt_tokens": 5505,
+        "total_tokens": 6243,
+        "prompt_tokens_details": {
+          "cached_tokens": 3896
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      },
+      "latency_ms": 14114,
+      "seq": 224
+    },
+    {
+      "at": "2026-11-10T15:45:13.993255+00:00",
+      "type": "tool_start",
+      "text": "propose_labels",
+      "args": {
+        "group": {
+          "value": "unknown",
+          "reason": "现有材料仅有共同出口IP、共同推广App、合作伙伴关系及独立登记摘要，均不能证明股权或实际控制关系；完整股东及最终控制人未披露，初筛同集团缺乏依据。",
+          "evidence": [
+            {
+              "source_id": "src-0a111299364a",
+              "quote": "初筛信号：过去 30 天存在共同办公出口 IP，两个账户都推广 App「山间集市」。初筛标签：疑似同集团。初筛信号并非已核实的公司关系。"
+            },
+            {
+              "source_id": "src-d87368594098",
+              "quote": "北川科技有限公司 与 远山传媒有限公司 是长期商业合作伙伴，双方共同参与「山间集市」的市场推广。"
+            },
+            {
+              "source_id": "src-2a8318c268af",
+              "quote": "此摘要仅确认两个法律主体独立登记。完整股东及最终控制人信息未披露，不能据此判断是否同集团。"
+            }
+          ]
+        },
+        "agency": {
+          "value": "unknown",
+          "reason": "查到的授权书仅覆盖2025-01-01至2025-06-30，核验日2026-11-10已过期，只能证明历史授权，不能确认当前代理，也不足以证明当前不存在任何代理关系。",
+          "evidence": [
+            {
+              "source_id": "src-94d5106ee0f2",
+              "quote": "委托方：北川科技有限公司\n\n受托方：远山传媒有限公司\n\n委托方授权受托方为 App「山间集市」提供广告账户操作、素材上传及投放执行服务。\n\n授权期限：2025-01-01 至 2025-06-30。"
+            }
+          ]
+        },
+        "budget": {
+          "value": "unknown",
+          "reason": "授权书明确不涉及最终预算审批权，合作页也不披露预算审批权，缺少统一预算决策或最终审批归属的明确条款。",
+          "evidence": [
+            {
+              "source_id": "src-94d5106ee0f2",
+              "quote": "本授权不涉及股权转让、公司控制关系或最终预算审批权。"
+            },
+            {
+              "source_id": "src-d87368594098",
+              "quote": "本页仅介绍商业合作，不披露股权、控制关系或预算审批权。"
+            }
+          ]
+        },
+        "missing": [
+          "完整股东、实际控制人或集团架构披露材料",
+          "覆盖2026-11-10且主体、范围清晰的当前有效代理授权文件",
+          "最终预算审批权归属或统一预算决策安排的明确条款"
+        ],
+        "summary": "初筛“同集团”缺乏控制证据：共同IP、同App推广、合作关系仅为线索，登记摘要未披露股东/控制人。现有代理授权已于2025-06-30过期，当前代理无法确认。预算审批权无明确证据，三项均保留未知；其中代理因过期不能确认当前有效授权。"
+      },
+      "run_id": "run-6873991885f1",
+      "seq": 225
+    },
+    {
+      "at": "2026-11-10T15:45:14.031817+00:00",
+      "type": "proposal",
+      "text": "已生成待确认的标签草稿",
+      "proposal_id": "proposal-c47853033cdf",
+      "seq": 226
+    },
+    {
+      "at": "2026-11-10T15:45:14.035931+00:00",
+      "type": "tool_end",
+      "text": "propose_labels",
+      "ok": true,
+      "source_id": null,
+      "run_id": "run-6873991885f1",
+      "seq": 227
+    },
+    {
+      "at": "2026-11-10T15:45:18.092815+00:00",
+      "type": "model_call",
+      "text": "模型已完成一次判断",
+      "run_id": "run-6873991885f1",
+      "turn": 5,
+      "model": "doubao-seed-2-1-pro-260628",
+      "usage": {
+        "completion_tokens": 115,
+        "prompt_tokens": 6298,
+        "total_tokens": 6413,
+        "prompt_tokens_details": {
+          "cached_tokens": 4920
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      },
+      "latency_ms": 4048,
+      "seq": 228
+    },
+    {
+      "at": "2026-11-10T15:45:18.109299+00:00",
+      "type": "message",
+      "text": "已完成初核并提交草稿：集团关系未知，初筛“同集团”仅有共同IP、同App推广、合作线索，无股权/实际控制人证据；代理关系未知，查到的广告授权期限为2025-01-01至2025-06-30，已早于2026-11-10，不能确认当前代理；预算决策未知，材料明确不涉及最终预算审批权。需补充控制架构、当前有效授权、预算审批条款。",
+      "role": "assistant",
+      "seq": 229
+    },
+    {
+      "at": "2026-11-10T15:45:18.121639+00:00",
+      "type": "run_finished",
+      "text": "本轮查证结束",
+      "run_id": "run-6873991885f1",
+      "seq": 230
+    }
+  ],
+  "sources": [
+    {
+      "id": "src-0a111299364a",
+      "session_id": "case-b77231bd63fd",
+      "title": "客户核验资料目录 · 核验资料",
+      "url": "http://127.0.0.1:8860/sample-site/expired/overview",
+      "text": "LINKDESK SAMPLE LIBRARY · 虚构公司与合成材料，仅用于方法验证\n北川科技 × 远山传媒\n客户核验资料目录\n\n待核验主体：北川科技有限公司 与 远山传媒有限公司。\n\n初筛信号：过去 30 天存在共同办公出口 IP，两个账户都推广 App「山间集市」。初筛标签：疑似同集团。初筛信号并非已核实的公司关系。\n\n请分别核验集团、代理、预算决策三个维度。材料索引见下方。\n\n客户核验资料目录\n合作伙伴介绍\n广告代理授权书\n企业主体登记摘要",
+      "links": [
+        {
+          "text": "客户核验资料目录",
+          "url": "http://127.0.0.1:8860/sample-site/expired/overview"
+        },
+        {
+          "text": "合作伙伴介绍",
+          "url": "http://127.0.0.1:8860/sample-site/expired/partners"
+        },
+        {
+          "text": "广告代理授权书",
+          "url": "http://127.0.0.1:8860/sample-site/expired/authorization"
+        },
+        {
+          "text": "企业主体登记摘要",
+          "url": "http://127.0.0.1:8860/sample-site/expired/registry"
+        }
+      ],
+      "at": "2026-11-10T15:44:39.838186+00:00",
+      "sha256": "a7aee64275f0fde2235d72f8bfddf61634f336e60b956c58bee60c1f535e9915",
+      "actor": "agent",
+      "kind": "web",
+      "updated_at": "2026-11-10T15:44:39.838203+00:00"
+    },
+    {
+      "id": "src-94d5106ee0f2",
+      "session_id": "case-b77231bd63fd",
+      "title": "广告代理授权书 · 核验资料",
+      "url": "http://127.0.0.1:8860/sample-site/expired/authorization",
+      "text": "LINKDESK SAMPLE LIBRARY · 虚构公司与合成材料，仅用于方法验证\n北川科技 × 远山传媒\n广告代理授权书\n\n委托方：北川科技有限公司\n\n受托方：远山传媒有限公司\n\n委托方授权受托方为 App「山间集市」提供广告账户操作、素材上传及投放执行服务。\n\n授权期限：2025-01-01 至 2025-06-30。\n\n本授权不涉及股权转让、公司控制关系或最终预算审批权。\n\n文件标识：AUTH-EXPIRED-2025；发布方：北川科技有限公司。\n\n客户核验资料目录\n合作伙伴介绍\n广告代理授权书\n企业主体登记摘要",
+      "links": [
+        {
+          "text": "客户核验资料目录",
+          "url": "http://127.0.0.1:8860/sample-site/expired/overview"
+        },
+        {
+          "text": "合作伙伴介绍",
+          "url": "http://127.0.0.1:8860/sample-site/expired/partners"
+        },
+        {
+          "text": "广告代理授权书",
+          "url": "http://127.0.0.1:8860/sample-site/expired/authorization"
+        },
+        {
+          "text": "企业主体登记摘要",
+          "url": "http://127.0.0.1:8860/sample-site/expired/registry"
+        }
+      ],
+      "at": "2026-11-10T15:44:41.968245+00:00",
+      "sha256": "dac0cf4af68134f65205b3bbee783fe024c95998df55a08985d584a3f0a5ca5e",
+      "actor": "agent",
+      "kind": "web",
+      "updated_at": "2026-11-10T15:44:41.968258+00:00"
+    },
+    {
+      "id": "src-2a8318c268af",
+      "session_id": "case-b77231bd63fd",
+      "title": "企业主体登记摘要 · 核验资料",
+      "url": "http://127.0.0.1:8860/sample-site/expired/registry",
+      "text": "LINKDESK SAMPLE LIBRARY · 虚构公司与合成材料，仅用于方法验证\n北川科技 × 远山传媒\n企业主体登记摘要\n\n主体一：北川科技有限公司。主体二：远山传媒有限公司。\n\n此摘要仅确认两个法律主体独立登记。完整股东及最终控制人信息未披露，不能据此判断是否同集团。\n\n客户核验资料目录\n合作伙伴介绍\n广告代理授权书\n企业主体登记摘要",
+      "links": [
+        {
+          "text": "客户核验资料目录",
+          "url": "http://127.0.0.1:8860/sample-site/expired/overview"
+        },
+        {
+          "text": "合作伙伴介绍",
+          "url": "http://127.0.0.1:8860/sample-site/expired/partners"
+        },
+        {
+          "text": "广告代理授权书",
+          "url": "http://127.0.0.1:8860/sample-site/expired/authorization"
+        },
+        {
+          "text": "企业主体登记摘要",
+          "url": "http://127.0.0.1:8860/sample-site/expired/registry"
+        }
+      ],
+      "at": "2026-11-10T15:44:42.103681+00:00",
+      "sha256": "30c650f5c1b1f7094afa7585aa4f6abfd2b62f87b1dc68cd04ba52d4c63eadff",
+      "actor": "agent",
+      "kind": "web",
+      "updated_at": "2026-11-10T15:44:42.103698+00:00"
+    },
+    {
+      "id": "src-d87368594098",
+      "session_id": "case-b77231bd63fd",
+      "title": "合作伙伴介绍 · 核验资料",
+      "url": "http://127.0.0.1:8860/sample-site/expired/partners",
+      "text": "LINKDESK SAMPLE LIBRARY · 虚构公司与合成材料，仅用于方法验证\n北川科技 × 远山传媒\n合作伙伴介绍\n\n北川科技有限公司 与 远山传媒有限公司 是长期商业合作伙伴，双方共同参与「山间集市」的市场推广。\n\n本页仅介绍商业合作，不披露股权、控制关系或预算审批权。\n\n客户核验资料目录\n合作伙伴介绍\n广告代理授权书\n企业主体登记摘要",
+      "links": [
+        {
+          "text": "客户核验资料目录",
+          "url": "http://127.0.0.1:8860/sample-site/expired/overview"
+        },
+        {
+          "text": "合作伙伴介绍",
+          "url": "http://127.0.0.1:8860/sample-site/expired/partners"
+        },
+        {
+          "text": "广告代理授权书",
+          "url": "http://127.0.0.1:8860/sample-site/expired/authorization"
+        },
+        {
+          "text": "企业主体登记摘要",
+          "url": "http://127.0.0.1:8860/sample-site/expired/registry"
+        }
+      ],
+      "at": "2026-11-10T15:44:42.247346+00:00",
+      "sha256": "16ee1cc7878d2ec9f58fd662b8dbecf7559eaf7bddb88ea6b015d6214595c2af",
+      "actor": "agent",
+      "kind": "web",
+      "updated_at": "2026-11-10T15:44:42.247363+00:00"
+    }
+  ]
+}

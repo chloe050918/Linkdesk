@@ -1,0 +1,14 @@
+{
+  "session_id": "case-47f9aa3e4155",
+  "skill_id": "skill-c404a7991fe8",
+  "skill_version": 2,
+  "pause_verified": true,
+  "expert_browser_verified": true,
+  "resumed_and_proposed": true,
+  "review_confirmed": true,
+  "labels": {
+    "group": "unknown",
+    "agency": "unknown",
+    "budget": "unknown"
+  }
+}

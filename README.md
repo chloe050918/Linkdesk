@@ -1,244 +1,177 @@
 <div align="center">
-
-<img src="static/favicon.svg" width="54" alt="Linkdesk" />
+<img src="web-agent/mark.svg" width="60" alt="Linkdesk" />
 
 # Linkdesk
 
-**让专家的每一次核验，都成为下一次工作的起点。**
+**一起查清楚，再把方法留下来。**
 
-面向客户关系数据团队的标注运营工作台 · 可运行的全栈产品项目
+Agent × 共享浏览器 × 专家纠正 × 可复用 Skill
 
-[产品介绍](docs/PRODUCT.md) · [四分钟演示](docs/DEMO.md) · [本地运行](#本地运行) · [架构与接口](docs/ARCHITECTURE.md) · [验证记录](docs/VALIDATION.md)
+[快速开始](#快速开始) · [操作演示](docs/AGENT-DEMO.md) · [产品设计](docs/AGENT-PRODUCT.md) · [技术架构](docs/AGENT-ARCHITECTURE.md) · [实测记录](docs/AGENT-VALIDATION.md)
 
 [![Tests](https://github.com/chloe050918/Linkdesk/actions/workflows/test.yml/badge.svg)](https://github.com/chloe050918/Linkdesk/actions/workflows/test.yml)
 
-Python 标准库 · Vanilla JavaScript · SQLite · 本地优先
-
+Python · FastAPI · Playwright · SQLite · 原生 JavaScript
 </div>
 
-<p align="center"><img src="screenshots/09-project-page.png" width="520" alt="Linkdesk 产品介绍" /></p>
+![Agent 与专家共享浏览器](screenshots/agent-workspace.jpg)
 
-## 先看实际产物
+## 它解决什么问题？
 
-| 产物 | 可以看到什么 |
-|---|---|
-| [已复核关系档案](examples/reviewed-case.md) | 专家最终确认了什么、引用什么、哪些问题仍未知 |
-| [可复用检查模板](examples/review-template.json) | 来源、规则版本、边界回归与应用记录 |
-| [下一案的复核草稿](examples/prepared-draft.json) | 如何复用检查方法，同时引用下一案自己的材料 |
-| [四分钟完整演示](docs/DEMO.md) | 从 12 条候选到代表复核、模板验证与逐案草稿 |
+两家公司共用 IP、投放同一个 App，能说明它们是同一集团吗？也可能只是同一个代理商在操作。
 
-产物由本地合成案例实际运行导出。克隆运行后，可从初始案例重新完成整个过程。
+核验人员需要查询材料、核对主体、检查授权范围和有效期，再给出判断。只保存最终标签，会丢掉下一位同事最需要的东西：**去哪里查、什么证据有效、什么情况必须停下来。**
 
-<details>
-<summary>展开查看工作台全页截图</summary>
+Linkdesk 将核验工作放在 Agent 对话与共享浏览器中。Agent 实际查资料，专家可随时接管、引用原文、补充判断；确认结果后，将这次查证提炼为可编辑的方法，用于新的公司和新的证据。
 
-<img src="screenshots/04-review-operations.png" width="520" alt="Linkdesk 复核运营首页" />
+这是可本机运行的独立产品项目。内置公司和材料全部为合成案例，不代表任何公司的内部产品、业务流程或数据。
 
-</details>
+## 一个完整使用过程
 
-## 为什么做 Linkdesk
-
-关系模型给出了一批“疑似同集团”的公司。它们共享 IP、推广同一个 App，看起来很像。
-
-但这可能是集团协同，也可能只是同一个代理商在操作。模型产出候选之后，标注人员仍要整理材料，业务专家仍要判断依据。真正稀缺的，是专家能花在这些判断上的时间。
-
-Linkdesk 把这段工作连起来：**安排值得核验的案例，整理每项结论的证据，再将已确认的检查方法安全地复用到后续案例。**
-
-它面向三类使用者：
-
-| 使用者 | 需要完成的工作 | Linkdesk 提供的支持 |
+| 阶段 | 用户操作 | 实际发生的事情 |
 |---|---|---|
-| 标注运营负责人 | 分配有限复核名额，发现重复问题 | 可解释排序、同类分组、固定种子随机抽检、安排留存 |
-| 标注人员 | 将候选关系整理成可复核任务 | 材料导入、原文引用、关系维度拆分、补证任务、逐案草稿 |
-| 业务专家 | 判断证据是否足够，沉淀业务经验 | 聚焦结论与范围的复核、规则来源记录、边界回归、模板启停 |
+| 开始查证 | 选择案例，描述核验问题 | 模型选择搜索、打开页面、点击链接、阅读来源等工具；后端实际执行 |
+| 一起核对 | 查看浏览器、暂停接管、选中原文 | 保存页面文字、截图、来源时间、内容哈希、工具参数与专家引用 |
+| 修正判断 | 在对话中补充边界，要求修正 | Agent 重新提交标签；引文校验及独立模型验收通过后保存草稿 |
+| 确认方法 | 确认本案标签，点击“提炼查证方法” | 真模型根据操作记录、证据和纠正生成候选 Skill；专家编辑、启用 |
+| 换案复用 | 给新案例选择已启用的方法 | 方法加入该次 Agent 上下文，新案例仍独立查证；不会复制旧来源或旧标签 |
 
-本项目是独立产品原型，不代表任何公司的内部系统或现有能力。全部公司、材料、图谱规模和上游候选均为合成数据。
+**方法复用，不等于结论复用。** 有效授权可支持代理关系；授权过期只能保留未知；明确的控制证明可以同时支持集团关系。预算未知不会阻止代理维度先确认。
 
-## 先用一个完整故事理解它
+![方法库](screenshots/agent-skill.jpg)
 
-### 1. 专家本轮只能看四项，先看什么？
+## 已实现能力
 
-首页载入 12 条合成候选关系。系统优先展示相反证据、影响多个主体的关联，以及重复模式的代表案例；保留一个名额，从剩余候选中随机抽检。
+- **真实 Agent 循环**：Chat Completions 工具调用、执行结果回传、有限轮次、异常留痕、暂停与继续。支持方舟与 OpenAI 接入配置。
+- **共享浏览器**：独立 Chromium 实例；真实页面截图可点击、滚动、输入；原文模式可选取证据。支持公开网页搜索和来源链接导航。
+- **证据与标签**：集团、代理、预算三个维度；引文原文匹配与案例归属校验；独立模型检查材料能否支持确定性标签；专家最终确认。
+- **专家方法沉淀**：真实模型提炼 Skill、直接编辑、新版本、启用/停用、跨案例应用、导出 `SKILL.md`。
+- **可追溯记录**：SQLite 持久化、页面快照、专家纠正、工具参数、模型用量、验收记录、案例 JSON 导出；支持文字型 PDF/TXT/MD/CSV/JSON 上传。
 
-排序理由直接显示在案例旁边。这里没有未经校准的“置信度 98%”，也没有把风险、重要程度和模型概率混成一个分数。同一批数据与抽检种子可以重现安排。
+独立证据验收是第二次模型调用，与执行模型使用同一服务，不是绝对正确的判官。它检查“材料是否支持标签”，不能认证材料本身真实。最终标签仍由人确认。
 
-### 2. 六个相似案例，为什么不能一起确认？
+## 快速开始
 
-“同类问题”将共享操作和同 App 的六项候选放在一起。三个有有效代理授权，一个授权过期，一个缺授权，还有一个同时有集团控制证明。
-
-它们可以共享检查方法，却不能共享结论。页面让这些差异直接可见。
-
-<details>
-<summary>查看同类问题及不同证据条件</summary>
-
-<img src="screenshots/05-pattern-comparison.png" width="520" alt="同类问题及不同证据条件" />
-
-</details>
-
-### 3. 专家先确认一个具体案例
-
-打开“青禾科技 × 远帆数字营销”。授权书的原文、提供方、日期、适用范围与代理关系判断放在一起。集团关系与预算关系各自保留未知。
-
-提交代理维度，切换到业务复核环节确认，生成带来源和版本的档案。当前由填写姓名模拟角色，尚无真实账号隔离。材料变更后，旧复核失效；原始记录仍保留。
-
-### 4. 把经验变成可验证的检查模板
-
-从这条已复核记录建立模板：共享操作不能直接支持集团判断；每案有有效代理授权、且没有明确控制关系或冲突时，才允许生成代理复核草稿。
-
-模板先运行 10 个固定合成边界场景，包含过期、缺失、主体不匹配、否定授权、同集团反例和材料冲突。全部通过才允许启用。
-
-**这套回归验证的是“模板适用性”，不是关系模型准确率。** 页面里的简化对照只是“按操作相似直接套用”的规则，不是任何生产系统的表现。
-
-<details>
-<summary>查看检查模板的边界回归</summary>
-
-<img src="screenshots/06-boundary-validation.png" width="520" alt="检查模板的边界回归" />
-
-</details>
-
-### 5. 复用方法，逐案保留证据
-
-启用后，预览会说明哪些案例可复用、哪些必须排除。确认生成后，穗禾与新镜各得到一份引用自己授权文件的复核草稿。
-
-没有公司标签被自动确认，没有客户、账户或资金被合并。草稿仍需人工提交和业务复核。来源案例撤回、证据变化或规则停用后，规则不能继续生成新草稿。
-
-<details>
-<summary>查看逐案适用性检查</summary>
-
-<img src="screenshots/07-reuse-preview.png" width="520" alt="逐案适用性检查" />
-
-</details>
-
-## 已经可以做什么
-
-| 能力 | 当前实现 |
-|---|---|
-| 复核安排 | 影响与冲突优先、同类代表去重、保留随机抽检位、保存安排 |
-| 证据调查 | 新建双主体调查，TXT / MD / CSV 导入，原文引用，有效期与来源校验 |
-| 人工协作 | 补证、部分维度提交、退回、复核、归档、撤回、版本记录 |
-| 规则运营 | 已复核来源 → 候选模板 → 边界回归 → 启用 → 适用性预览 → 批量生成逐案草稿 → 停用 |
-| 交付与验证 | SQLite 持久化、Markdown / JSON 导出、自动化测试、固定回归数据、CI 配置 |
-
-### 分析能力的真实边界
-
-- **默认可离线运行，使用保守的证据提取规则。** 能处理部分明确中文陈述和字段式文本，不具备通用文档理解能力。
-- 支持可选的 OpenAI 兼容模型提取接口；本次没有验通真实在线模型。在线提取仍要经过引用、材料类型、主体、日期与来源校验。
-- 同类分组来自结构化信号，排序来自明确规则；当前不是学习式聚类、主动学习或经过校准的概率模型。
-- 检查模板使用受约束的内置规则类型，业务人员填写判断依据；当前不支持任意自然语言编译规则或自动训练模型。
-- 使用本机模拟角色，没有企业登录、真实职责分离、外部企业搜索、OCR、CRM 写回、自动消息通知或模型训练管线。
-
-## 本地运行
-
-需要 Python **3.9+** 和现代浏览器。无需安装 Python 或前端依赖。
+需要 Python 3.9+；推荐 3.11。macOS、Linux 均可运行。
 
 ```bash
-# 克隆项目后启动
 git clone https://github.com/chloe050918/Linkdesk.git
 cd Linkdesk
-python3 server.py --port 8850
+python3 -m venv .venv
+source .venv/bin/activate
+pip install -r requirements-agent.txt
+python -m playwright install chromium
+cp .env.example .env.local
 ```
 
-启动后打开 [本地工作台](http://127.0.0.1:8850/) 或 [本地产品介绍页](http://127.0.0.1:8850/project.html)。这些地址仅在已启动服务的电脑上有效。
+在 `.env.local` 配置自己的模型，或启动后点击左下角“配置模型连接”。
 
-macOS 可双击 `start.command`。该脚本会检查已有服务并在必要时启动，不会创建公开访问地址。
+**火山方舟**：
 
-默认数据保存到 `data/workspace.sqlite3`。刷新和服务重启都保留记录。独立工作区可以使用：
+```dotenv
+LINKDESK_PROVIDER=ark
+LINKDESK_BASE_URL=https://ark.cn-beijing.volces.com/api/v3
+LINKDESK_MODEL=your-model-id
+LINKDESK_API_KEY=your-api-key
+```
+
+**OpenAI**：
+
+```dotenv
+LINKDESK_PROVIDER=openai
+LINKDESK_BASE_URL=https://api.openai.com/v1
+LINKDESK_MODEL=gpt-4.1
+LINKDESK_API_KEY=your-api-key
+```
+
+模型需支持工具调用与 JSON 输出。ChatGPT 登录状态本身不是 API Key。`.env.local` 不进入 Git；不要把密钥放到前端。
 
 ```bash
-RELATION_DB=/tmp/linkdesk-sandbox.sqlite3 python3 server.py --port 8851
+python run_agent.py
 ```
 
-每条样例支持“重新开始”，原记录保留在本机备份中。恢复批次进行完整重演：
+打开 **http://127.0.0.1:8860/**。macOS 也可双击 `start-agent.command`。如已安装 Google Chrome，macOS 默认使用其可执行文件启动独立浏览器，不读取个人 Chrome 登录、Cookie 或标签页。
 
-```bash
-python3 scripts/reset_batch.py
-```
+可用 `LINKDESK_BROWSER_CHANNEL=chrome` 指定 Chrome。未安装 Chrome 的环境使用 Playwright Chromium。自定义端口：`python run_agent.py --port 8870`。
 
-该命令只重置 12 条合成批次案例，并停用由它们产生的模板；会保留案例备份、模板与历史记录。不会改变自建调查或旧版单案样例。
+## 四个内置案例
 
-### 可选在线模型
+| 案例 | 想验证的边界 |
+|---|---|
+| 澄海游戏 × 云帆营销 | 共享投放信号不证明同集团；有效授权支持代理执行 |
+| 星原科技 × 微澜互动 | 已确认方法用于新的主体，重新读取当前案例材料 |
+| 北川科技 × 远山传媒 | 过期材料既不能确认当前授权，也不能证明没有其他代理关系 |
+| 南屿互动 × 清禾传媒 | 代理关系与集团控制可以同时成立；不能套用互斥分类 |
 
-配置项示例见 [.env.example](.env.example)。服务**不会自动加载 `.env`**，请在启动进程前通过环境变量注入配置。
-
-```bash
-export RELATION_LLM_BASE_URL='https://your-provider.example/v1'
-export RELATION_LLM_MODEL='your-model-id'
-# 通过本机安全方式设置 RELATION_LLM_API_KEY
-python3 server.py
-```
-
-配置齐全时，“重新分析”提供在线模型选项。只有选择在线分析，材料正文才会发送给配置的服务；本地规则模式不发送材料。请只上传有权处理的资料。
-
-## 验证项目
-
-```bash
-# 运行工作流、证据、分流、回归和模板复用测试
-python3 -m unittest discover -s . -p 'test_*.py' -v
-
-# 单独运行固定边界回归，生成可阅读的 JSON 结果
-python3 scripts/evaluate.py
-
-# 打包源码、说明、样例和截图，排除运行数据与密钥
-python3 scripts/package.py
-```
-
-当前结果与浏览器验收记录见 [验证说明](docs/VALIDATION.md)。测试样本检查功能边界，不用于宣称线上准确率或节省工时。
+案例使用固定日期，当前验证基准为 **2026-11-10**；随着日期变化，授权时效判断应相应变化。
 
 ## 架构
 
 ```mermaid
 flowchart LR
-    Q[候选关系与结构化信号] --> O[复核安排 / 随机抽检]
-    O --> C[单案证据调查]
-    M[材料正文] --> E[本地提取 / 可选模型]
-    E --> V[引用与证据校验]
-    V --> C
-    C --> H[人工提交与业务复核]
-    H --> A[关系档案与版本]
-    H --> P[检查模板]
-    P --> T[固定边界回归]
-    T --> R[逐案适用性检查]
-    R --> D[引用本案材料的复核草稿]
-    D --> H
+    U[专家：对话 / 引用 / 纠正] --> UI[Agent 工作区]
+    UI --> API[FastAPI]
+    API --> R[有界 Agent 循环]
+    R <--> M[方舟 / OpenAI 模型 API]
+    R --> B[Playwright 独立浏览器]
+    B --> W[公开网页 / 合成资料站]
+    B --> S[(SQLite + 页面快照)]
+    R --> V[原文匹配校验 + 独立证据验收]
+    V --> D[标签草稿]
+    D --> H[专家确认]
+    H --> K[候选 Skill → 编辑 → 启用]
+    K --> R
+    U --> S
 ```
 
-前端用原生 JavaScript，后端用 Python 标准库，SQLite 保存案例与运营记录。规则决定授权边界，模型只能提取候选陈述；回归预期结果不参与队列排序。
+“学会方法”在这里指 **提炼并应用可审阅的任务指令**，没有微调或训练模型权重，也没有录制全桌面。浏览器和工具返回的页面内容会发送给所配置的模型服务。
 
-更多实现细节见 [架构、状态与 API](docs/ARCHITECTURE.md)。
+## 验证
+
+```bash
+# 离线：契约、证据、状态及安全边界；不消耗模型额度
+python -m unittest discover -s tests-agent -v
+node --check web-agent/app.js
+
+# 原工作台回归
+python -m unittest discover -s . -p 'test_*.py' -v
+
+# 在线：真实模型 + 真实浏览器，会消耗所配置账户的额度
+# 先保持应用运行，再执行：
+python scripts/live_agent_check.py
+```
+
+在线验收覆盖一次专家纠正、确认与提炼，以及新主体、过期授权、控制与代理并存三个后续案例。每个确定性标签检查来源属于当前案例。报告保存在 `data/agent/live-check.json`，该目录不进入 Git。
+
+公开的运行摘要与 Skill 示例见 [实测记录](docs/AGENT-VALIDATION.md) 和 [examples/agent](examples/agent)。合成案例通过并不代表在真实客户关系数据上达到同等准确率，也不证明 Skill 比基础模型提升了准确率。
+
+## 项目结构
 
 ```text
-Linkdesk/
-├── server.py                 # HTTP API、事务、持久化、复核状态
-├── engine.py                 # 证据提取与校验、可选模型适配
-├── operations.py             # 安排、适用性、边界回归、逐案草稿
-├── fixtures.py               # 三个独立调查样例
-├── batch_fixtures.py          # 十二条合成运营候选
-├── examples/                 # 合成案例实际导出的档案、模板与草稿
-├── evaluation/               # 独立的固定边界样本
-├── static/                   # 工作台、项目介绍页、样式
-├── scripts/                  # 回归、重演、打包
-├── docs/                     # 产品、架构、演示、验证
-├── screenshots/              # 实际页面截图
-├── test_workflow.py           # 证据与人工工作流测试
-├── test_operations.py         # 分流、规则与复用测试
-└── .github/workflows/test.yml # 可在 GitHub 运行的 CI
+agentdesk/             Agent、浏览器、模型客户端、API、持久化
+web-agent/             对话与共享浏览器界面
+run_agent.py           新版入口，默认 8860
+requirements-agent.txt Python 依赖
+scripts/live_agent_check.py 真实模型全链路验收
+tests-agent/          不调用在线模型的自动化测试
+examples/agent/        从真实执行导出的合成案例与 Skill
+screenshots/agent-*    实际运行截图
+docs/AGENT-*          产品、架构、演示和验证说明
+server.py + static/    保留的早期标注运营工作台
 ```
 
-## 怎样验证业务价值
+## 当前边界
 
-产品假设是：**在标签质量不下降时，降低每条合格关系消耗的人工时间。** 当前没有真实业务试点数据。
+- 本机单用户应用，没有企业 SSO、多租户、RBAC 或线上部署；监听地址固定为 `127.0.0.1`。
+- 浏览器隔离于个人账号，只支持公开网页。遇到登录、验证码、访问限制时记录问题并换来源，不绕过。
+- 网络访问限制为 HTTP(S)、公开地址与 GET/HEAD，允许本机合成资料站。不是完整的网络安全沙箱，不能直接部署到不可信多租户环境。
+- 记录明确的查询、页面、引用与修正；不能知道用户为什么看了某段文字，更不能将浏览行为自动当成正确标签。
+- 不自动修改 CRM、合并客户或调整预算。Skill 启用表示人工接受方法，不代表已完成大规模验证。
 
-试点应让新旧流程处理难度相当的案例，并独立抽检最终标签；避免同一人重复做同一案例产生记忆优势。
+## 早期工作台
 
-- 主指标：每条抽检合格关系的全链路人力分钟数，单列专家复核时间。
-- 协作指标：补证往返次数、退回率、专家需要重新整理材料的比例。
-- 质量护栏：错误集团关联、错误套用模板、过度保留未知、过期依据继续使用。
-- 抽检指标：未优先处理池的错误类型与分布；不能只统计已确认的容易案例。
-
-## 下一步
-
-接入经过授权的真实脱敏样本，验证业务定义与分流规则；根据抽检结果调整代表案例选择；再接企业身份、外部数据、模型与标签平台。自动确认标签和自动模型训练均不在当前范围内。
+仓库保留了按队列排序、模板验证与角色复核组织的早期版本，入口为 `python server.py --port 8850`。它与新版 Agent 工作区使用独立数据与前端。见 [早期版本说明](docs/LEGACY-WORKBENCH.md)、[原架构](docs/ARCHITECTURE.md)。新版默认从本 README 的 `run_agent.py` 启动。
 
 ## License
 
-[MIT](LICENSE)。示例数据与品牌名称均为虚构，不代表真实商业关系。
+[MIT](LICENSE)

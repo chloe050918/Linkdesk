@@ -1,0 +1,610 @@
+{
+  "id": "case-12e257d9bc52",
+  "title": "星原科技 × 微澜互动",
+  "task": "核验两家公司当前的集团、代理和预算决策关系，检查初筛同集团标签是否有依据。",
+  "companies": [
+    "星原科技有限公司",
+    "微澜互动有限公司"
+  ],
+  "sample": "transfer",
+  "skill_id": "skill-43f6c6e905cf",
+  "proposal": {
+    "missing": [
+      "完整股东及实际控制人/集团架构披露文件",
+      "明确最终预算审批权归属或统一预算决策安排的合同/制度文件"
+    ],
+    "summary": "已核到当前有效广告投放执行授权：星原科技授权微澜互动在2025-01-01至2027-06-30为「星际农场」操作广告账户、上传素材、执行投放；但授权书明确不含控制关系和最终预算审批权。共同IP、同App推广和合作关系不能证明同集团，且登记资料未披露股东/实控人，故集团关系未知；预算审批权无证据，亦未知。",
+    "group": {
+      "value": "unknown",
+      "reason": "现有材料只有共同出口IP、同App推广、商业合作及独立登记摘要；完整股东和最终控制人未披露，不能证明或否定集团控制。",
+      "evidence": [
+        {
+          "source_id": "src-a4536d2f54e7",
+          "quote": "初筛信号：过去 30 天存在共同办公出口 IP，两个账户都推广 App「星际农场」。初筛标签：疑似同集团。初筛信号并非已核实的公司关系。",
+          "source_hash": "4eb4c85de2a2c68552edaac29208f6850863e9ae48e808a3b7a28e0aa677efbc"
+        },
+        {
+          "source_id": "src-8ec560b7be43",
+          "quote": "此摘要仅确认两个法律主体独立登记。完整股东及最终控制人信息未披露，不能据此判断是否同集团。",
+          "source_hash": "ef3ba8b56825d5ce7567cf0372dc054517d7ff4def75440d9f02f22c14eca991"
+        },
+        {
+          "source_id": "src-ad39275d1f8b",
+          "quote": "本页仅介绍商业合作，不披露股权、控制关系或预算审批权。",
+          "source_hash": "2c1d2b2da5954ab60109ee9ec439a148962bbe1749cf1302ac676b47dcc5968e"
+        }
+      ]
+    },
+    "agency": {
+      "value": "confirmed",
+      "reason": "授权书主体、事项、期限明确，核验日2026-11-10落在2025-01-01至2027-06-30有效期内，可确认当前广告代理/投放执行授权，但仅限写明事项。",
+      "evidence": [
+        {
+          "source_id": "src-2e02e307f1b0",
+          "quote": "委托方：星原科技有限公司\n\n受托方：微澜互动有限公司\n\n委托方授权受托方为 App「星际农场」提供广告账户操作、素材上传及投放执行服务。\n\n授权期限：2025-01-01 至 2027-06-30。",
+          "source_hash": "fd6baa75e37b7d858d024c0cb81833a1fe35fed8c1034741ccbd28dfe0d09037"
+        },
+        {
+          "source_id": "src-2e02e307f1b0",
+          "quote": "本授权不涉及股权转让、公司控制关系或最终预算审批权。",
+          "source_hash": "fd6baa75e37b7d858d024c0cb81833a1fe35fed8c1034741ccbd28dfe0d09037"
+        }
+      ]
+    },
+    "budget": {
+      "value": "unknown",
+      "reason": "授权书明确不涉及最终预算审批权；合作介绍和登记摘要也未披露统一预算决策或最终审批归属，无法确认预算是否统一。",
+      "evidence": [
+        {
+          "source_id": "src-2e02e307f1b0",
+          "quote": "本授权不涉及股权转让、公司控制关系或最终预算审批权。",
+          "source_hash": "fd6baa75e37b7d858d024c0cb81833a1fe35fed8c1034741ccbd28dfe0d09037"
+        },
+        {
+          "source_id": "src-ad39275d1f8b",
+          "quote": "本页仅介绍商业合作，不披露股权、控制关系或预算审批权。",
+          "source_hash": "2c1d2b2da5954ab60109ee9ec439a148962bbe1749cf1302ac676b47dcc5968e"
+        }
+      ]
+    },
+    "id": "proposal-228252c91066",
+    "at": "2026-11-10T15:44:30.194077+00:00",
+    "status": "draft",
+    "verification": {
+      "supported": true,
+      "issues": []
+    }
+  },
+  "review": null,
+  "messages": [
+    {
+      "id": "msg-e7f6fb7d75b1",
+      "role": "user",
+      "content": "请开始查证，阅读索引里的来源链接，核对当前日期与授权范围，分别提交集团、代理、预算决策三个维度的标签草稿。",
+      "at": "2026-11-10T15:44:06.585433+00:00"
+    },
+    {
+      "id": "msg-14a17df7fd2b",
+      "role": "assistant",
+      "content": "结论：代理关系可确认——星原科技当前授权微澜互动为「星际农场」提供广告账户操作、素材上传及投放执行，有效期覆盖2026-11-10。集团控制、预算决策均证据不足：共同IP/同App/合作介绍不能证明同集团，登记资料未披露完整股东与实控人；授权书也明确不涉及最终预算审批权。需补股东/实控人及预算审批权材料。",
+      "at": "2026-11-10T15:44:36.536810+00:00"
+    }
+  ],
+  "events": [
+    {
+      "at": "2026-11-10T15:44:06.494740+00:00",
+      "type": "created",
+      "text": "建立核验任务",
+      "seq": 155
+    },
+    {
+      "at": "2026-11-10T15:44:06.591181+00:00",
+      "type": "message",
+      "text": "请开始查证，阅读索引里的来源链接，核对当前日期与授权范围，分别提交集团、代理、预算决策三个维度的标签草稿。",
+      "role": "user",
+      "seq": 156
+    },
+    {
+      "at": "2026-11-10T15:44:06.596601+00:00",
+      "type": "run_started",
+      "text": "开始查证",
+      "run_id": "run-8c6495750994",
+      "seq": 157
+    },
+    {
+      "at": "2026-11-10T15:44:06.616263+00:00",
+      "type": "skill_used",
+      "text": "应用方法：三维关系标签核验法",
+      "skill_id": "skill-43f6c6e905cf",
+      "version": 1,
+      "seq": 158
+    },
+    {
+      "at": "2026-11-10T15:44:08.542265+00:00",
+      "type": "model_call",
+      "text": "模型已完成一次判断",
+      "run_id": "run-8c6495750994",
+      "turn": 1,
+      "model": "doubao-seed-2-1-pro-260628",
+      "usage": {
+        "completion_tokens": 54,
+        "prompt_tokens": 2442,
+        "total_tokens": 2496,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      },
+      "latency_ms": 1916,
+      "seq": 159
+    },
+    {
+      "at": "2026-11-10T15:44:08.581627+00:00",
+      "type": "tool_start",
+      "text": "open_url",
+      "args": {
+        "url": "http://127.0.0.1:8860/sample-site/transfer/overview"
+      },
+      "run_id": "run-8c6495750994",
+      "seq": 160
+    },
+    {
+      "at": "2026-11-10T15:44:08.902696+00:00",
+      "type": "browser",
+      "text": "客户核验资料目录 · 核验资料",
+      "actor": "agent",
+      "action": "open_url",
+      "source_id": "src-a4536d2f54e7",
+      "url": "http://127.0.0.1:8860/sample-site/transfer/overview",
+      "args": {
+        "url": "http://127.0.0.1:8860/sample-site/transfer/overview"
+      },
+      "seq": 161
+    },
+    {
+      "at": "2026-11-10T15:44:08.915655+00:00",
+      "type": "tool_end",
+      "text": "open_url",
+      "ok": true,
+      "source_id": "src-a4536d2f54e7",
+      "run_id": "run-8c6495750994",
+      "seq": 162
+    },
+    {
+      "at": "2026-11-10T15:44:10.771498+00:00",
+      "type": "model_call",
+      "text": "模型已完成一次判断",
+      "run_id": "run-8c6495750994",
+      "turn": 2,
+      "model": "doubao-seed-2-1-pro-260628",
+      "usage": {
+        "completion_tokens": 36,
+        "prompt_tokens": 3031,
+        "total_tokens": 3067,
+        "prompt_tokens_details": {
+          "cached_tokens": 1848
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      },
+      "latency_ms": 1838,
+      "seq": 163
+    },
+    {
+      "at": "2026-11-10T15:44:10.802586+00:00",
+      "type": "tool_start",
+      "text": "click_link",
+      "args": {
+        "text": "广告代理授权书"
+      },
+      "run_id": "run-8c6495750994",
+      "seq": 164
+    },
+    {
+      "at": "2026-11-10T15:44:11.002654+00:00",
+      "type": "browser",
+      "text": "广告代理授权书 · 核验资料",
+      "actor": "agent",
+      "action": "click_link",
+      "source_id": "src-2e02e307f1b0",
+      "url": "http://127.0.0.1:8860/sample-site/transfer/authorization",
+      "args": {
+        "text": "广告代理授权书"
+      },
+      "seq": 165
+    },
+    {
+      "at": "2026-11-10T15:44:11.014328+00:00",
+      "type": "tool_end",
+      "text": "click_link",
+      "ok": true,
+      "source_id": "src-2e02e307f1b0",
+      "run_id": "run-8c6495750994",
+      "seq": 166
+    },
+    {
+      "at": "2026-11-10T15:44:12.943836+00:00",
+      "type": "model_call",
+      "text": "模型已完成一次判断",
+      "run_id": "run-8c6495750994",
+      "turn": 3,
+      "model": "doubao-seed-2-1-pro-260628",
+      "usage": {
+        "completion_tokens": 36,
+        "prompt_tokens": 3634,
+        "total_tokens": 3670,
+        "prompt_tokens_details": {
+          "cached_tokens": 2872
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      },
+      "latency_ms": 1910,
+      "seq": 167
+    },
+    {
+      "at": "2026-11-10T15:44:12.977687+00:00",
+      "type": "tool_start",
+      "text": "click_link",
+      "args": {
+        "text": "企业主体登记摘要"
+      },
+      "run_id": "run-8c6495750994",
+      "seq": 168
+    },
+    {
+      "at": "2026-11-10T15:44:13.147732+00:00",
+      "type": "browser",
+      "text": "企业主体登记摘要 · 核验资料",
+      "actor": "agent",
+      "action": "click_link",
+      "source_id": "src-8ec560b7be43",
+      "url": "http://127.0.0.1:8860/sample-site/transfer/registry",
+      "args": {
+        "text": "企业主体登记摘要"
+      },
+      "seq": 169
+    },
+    {
+      "at": "2026-11-10T15:44:13.159661+00:00",
+      "type": "tool_end",
+      "text": "click_link",
+      "ok": true,
+      "source_id": "src-8ec560b7be43",
+      "run_id": "run-8c6495750994",
+      "seq": 170
+    },
+    {
+      "at": "2026-11-10T15:44:16.197054+00:00",
+      "type": "model_call",
+      "text": "模型已完成一次判断",
+      "run_id": "run-8c6495750994",
+      "turn": 4,
+      "model": "doubao-seed-2-1-pro-260628",
+      "usage": {
+        "completion_tokens": 34,
+        "prompt_tokens": 4164,
+        "total_tokens": 4198,
+        "prompt_tokens_details": {
+          "cached_tokens": 2872
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      },
+      "latency_ms": 3018,
+      "seq": 171
+    },
+    {
+      "at": "2026-11-10T15:44:16.226037+00:00",
+      "type": "tool_start",
+      "text": "click_link",
+      "args": {
+        "text": "合作伙伴介绍"
+      },
+      "run_id": "run-8c6495750994",
+      "seq": 172
+    },
+    {
+      "at": "2026-11-10T15:44:16.381828+00:00",
+      "type": "browser",
+      "text": "合作伙伴介绍 · 核验资料",
+      "actor": "agent",
+      "action": "click_link",
+      "source_id": "src-ad39275d1f8b",
+      "url": "http://127.0.0.1:8860/sample-site/transfer/partners",
+      "args": {
+        "text": "合作伙伴介绍"
+      },
+      "seq": 173
+    },
+    {
+      "at": "2026-11-10T15:44:16.392631+00:00",
+      "type": "tool_end",
+      "text": "click_link",
+      "ok": true,
+      "source_id": "src-ad39275d1f8b",
+      "run_id": "run-8c6495750994",
+      "seq": 174
+    },
+    {
+      "at": "2026-11-10T15:44:30.092865+00:00",
+      "type": "model_call",
+      "text": "模型已完成一次判断",
+      "run_id": "run-8c6495750994",
+      "turn": 5,
+      "model": "doubao-seed-2-1-pro-260628",
+      "usage": {
+        "completion_tokens": 768,
+        "prompt_tokens": 4693,
+        "total_tokens": 5461,
+        "prompt_tokens_details": {
+          "cached_tokens": 3896
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      },
+      "latency_ms": 13683,
+      "seq": 179
+    },
+    {
+      "at": "2026-11-10T15:44:30.149504+00:00",
+      "type": "tool_start",
+      "text": "propose_labels",
+      "args": {
+        "group": {
+          "value": "unknown",
+          "reason": "现有材料只有共同出口IP、同App推广、商业合作及独立登记摘要；完整股东和最终控制人未披露，不能证明或否定集团控制。",
+          "evidence": [
+            {
+              "source_id": "src-a4536d2f54e7",
+              "quote": "初筛信号：过去 30 天存在共同办公出口 IP，两个账户都推广 App「星际农场」。初筛标签：疑似同集团。初筛信号并非已核实的公司关系。"
+            },
+            {
+              "source_id": "src-8ec560b7be43",
+              "quote": "此摘要仅确认两个法律主体独立登记。完整股东及最终控制人信息未披露，不能据此判断是否同集团。"
+            },
+            {
+              "source_id": "src-ad39275d1f8b",
+              "quote": "本页仅介绍商业合作，不披露股权、控制关系或预算审批权。"
+            }
+          ]
+        },
+        "agency": {
+          "value": "confirmed",
+          "reason": "授权书主体、事项、期限明确，核验日2026-11-10落在2025-01-01至2027-06-30有效期内，可确认当前广告代理/投放执行授权，但仅限写明事项。",
+          "evidence": [
+            {
+              "source_id": "src-2e02e307f1b0",
+              "quote": "委托方：星原科技有限公司\n\n受托方：微澜互动有限公司\n\n委托方授权受托方为 App「星际农场」提供广告账户操作、素材上传及投放执行服务。\n\n授权期限：2025-01-01 至 2027-06-30。"
+            },
+            {
+              "source_id": "src-2e02e307f1b0",
+              "quote": "本授权不涉及股权转让、公司控制关系或最终预算审批权。"
+            }
+          ]
+        },
+        "budget": {
+          "value": "unknown",
+          "reason": "授权书明确不涉及最终预算审批权；合作介绍和登记摘要也未披露统一预算决策或最终审批归属，无法确认预算是否统一。",
+          "evidence": [
+            {
+              "source_id": "src-2e02e307f1b0",
+              "quote": "本授权不涉及股权转让、公司控制关系或最终预算审批权。"
+            },
+            {
+              "source_id": "src-ad39275d1f8b",
+              "quote": "本页仅介绍商业合作，不披露股权、控制关系或预算审批权。"
+            }
+          ]
+        },
+        "missing": [
+          "完整股东及实际控制人/集团架构披露文件",
+          "明确最终预算审批权归属或统一预算决策安排的合同/制度文件"
+        ],
+        "summary": "已核到当前有效广告投放执行授权：星原科技授权微澜互动在2025-01-01至2027-06-30为「星际农场」操作广告账户、上传素材、执行投放；但授权书明确不含控制关系和最终预算审批权。共同IP、同App推广和合作关系不能证明同集团，且登记资料未披露股东/实控人，故集团关系未知；预算审批权无证据，亦未知。"
+      },
+      "run_id": "run-8c6495750994",
+      "seq": 180
+    },
+    {
+      "at": "2026-11-10T15:44:32.085471+00:00",
+      "type": "evidence_check",
+      "text": "独立证据验收通过",
+      "supported": true,
+      "issues": [],
+      "model": "doubao-seed-2-1-pro-260628",
+      "usage": {
+        "completion_tokens": 9,
+        "prompt_tokens": 962,
+        "total_tokens": 971,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      },
+      "latency_ms": 1865,
+      "seq": 183
+    },
+    {
+      "at": "2026-11-10T15:44:32.129580+00:00",
+      "type": "proposal",
+      "text": "已生成待确认的标签草稿",
+      "proposal_id": "proposal-228252c91066",
+      "seq": 184
+    },
+    {
+      "at": "2026-11-10T15:44:32.145687+00:00",
+      "type": "tool_end",
+      "text": "propose_labels",
+      "ok": true,
+      "source_id": null,
+      "run_id": "run-8c6495750994",
+      "seq": 185
+    },
+    {
+      "at": "2026-11-10T15:44:36.518067+00:00",
+      "type": "model_call",
+      "text": "模型已完成一次判断",
+      "run_id": "run-8c6495750994",
+      "turn": 6,
+      "model": "doubao-seed-2-1-pro-260628",
+      "usage": {
+        "completion_tokens": 102,
+        "prompt_tokens": 5518,
+        "total_tokens": 5620,
+        "prompt_tokens_details": {
+          "cached_tokens": 3896
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      },
+      "latency_ms": 4353,
+      "seq": 190
+    },
+    {
+      "at": "2026-11-10T15:44:36.544352+00:00",
+      "type": "message",
+      "text": "结论：代理关系可确认——星原科技当前授权微澜互动为「星际农场」提供广告账户操作、素材上传及投放执行，有效期覆盖2026-11-10。集团控制、预算决策均证据不足：共同IP/同App/合作介绍不能证明同集团，登记资料未披露完整股东与实控人；授权书也明确不涉及最终预算审批权。需补股东/实控人及预算审批权材料。",
+      "role": "assistant",
+      "seq": 191
+    },
+    {
+      "at": "2026-11-10T15:44:36.567915+00:00",
+      "type": "run_finished",
+      "text": "本轮查证结束",
+      "run_id": "run-8c6495750994",
+      "seq": 192
+    }
+  ],
+  "sources": [
+    {
+      "id": "src-a4536d2f54e7",
+      "session_id": "case-12e257d9bc52",
+      "title": "客户核验资料目录 · 核验资料",
+      "url": "http://127.0.0.1:8860/sample-site/transfer/overview",
+      "text": "LINKDESK SAMPLE LIBRARY · 虚构公司与合成材料，仅用于方法验证\n星原科技 × 微澜互动\n客户核验资料目录\n\n待核验主体：星原科技有限公司 与 微澜互动有限公司。\n\n初筛信号：过去 30 天存在共同办公出口 IP，两个账户都推广 App「星际农场」。初筛标签：疑似同集团。初筛信号并非已核实的公司关系。\n\n请分别核验集团、代理、预算决策三个维度。材料索引见下方。\n\n客户核验资料目录\n合作伙伴介绍\n广告代理授权书\n企业主体登记摘要",
+      "links": [
+        {
+          "text": "客户核验资料目录",
+          "url": "http://127.0.0.1:8860/sample-site/transfer/overview"
+        },
+        {
+          "text": "合作伙伴介绍",
+          "url": "http://127.0.0.1:8860/sample-site/transfer/partners"
+        },
+        {
+          "text": "广告代理授权书",
+          "url": "http://127.0.0.1:8860/sample-site/transfer/authorization"
+        },
+        {
+          "text": "企业主体登记摘要",
+          "url": "http://127.0.0.1:8860/sample-site/transfer/registry"
+        }
+      ],
+      "at": "2026-11-10T15:44:08.872754+00:00",
+      "sha256": "4eb4c85de2a2c68552edaac29208f6850863e9ae48e808a3b7a28e0aa677efbc",
+      "actor": "agent",
+      "kind": "web",
+      "updated_at": "2026-11-10T15:44:08.872816+00:00"
+    },
+    {
+      "id": "src-2e02e307f1b0",
+      "session_id": "case-12e257d9bc52",
+      "title": "广告代理授权书 · 核验资料",
+      "url": "http://127.0.0.1:8860/sample-site/transfer/authorization",
+      "text": "LINKDESK SAMPLE LIBRARY · 虚构公司与合成材料，仅用于方法验证\n星原科技 × 微澜互动\n广告代理授权书\n\n委托方：星原科技有限公司\n\n受托方：微澜互动有限公司\n\n委托方授权受托方为 App「星际农场」提供广告账户操作、素材上传及投放执行服务。\n\n授权期限：2025-01-01 至 2027-06-30。\n\n本授权不涉及股权转让、公司控制关系或最终预算审批权。\n\n文件标识：AUTH-TRANSFER-2025；发布方：星原科技有限公司。\n\n客户核验资料目录\n合作伙伴介绍\n广告代理授权书\n企业主体登记摘要",
+      "links": [
+        {
+          "text": "客户核验资料目录",
+          "url": "http://127.0.0.1:8860/sample-site/transfer/overview"
+        },
+        {
+          "text": "合作伙伴介绍",
+          "url": "http://127.0.0.1:8860/sample-site/transfer/partners"
+        },
+        {
+          "text": "广告代理授权书",
+          "url": "http://127.0.0.1:8860/sample-site/transfer/authorization"
+        },
+        {
+          "text": "企业主体登记摘要",
+          "url": "http://127.0.0.1:8860/sample-site/transfer/registry"
+        }
+      ],
+      "at": "2026-11-10T15:44:10.972825+00:00",
+      "sha256": "fd6baa75e37b7d858d024c0cb81833a1fe35fed8c1034741ccbd28dfe0d09037",
+      "actor": "agent",
+      "kind": "web",
+      "updated_at": "2026-11-10T15:44:10.972857+00:00"
+    },
+    {
+      "id": "src-8ec560b7be43",
+      "session_id": "case-12e257d9bc52",
+      "title": "企业主体登记摘要 · 核验资料",
+      "url": "http://127.0.0.1:8860/sample-site/transfer/registry",
+      "text": "LINKDESK SAMPLE LIBRARY · 虚构公司与合成材料，仅用于方法验证\n星原科技 × 微澜互动\n企业主体登记摘要\n\n主体一：星原科技有限公司。主体二：微澜互动有限公司。\n\n此摘要仅确认两个法律主体独立登记。完整股东及最终控制人信息未披露，不能据此判断是否同集团。\n\n客户核验资料目录\n合作伙伴介绍\n广告代理授权书\n企业主体登记摘要",
+      "links": [
+        {
+          "text": "客户核验资料目录",
+          "url": "http://127.0.0.1:8860/sample-site/transfer/overview"
+        },
+        {
+          "text": "合作伙伴介绍",
+          "url": "http://127.0.0.1:8860/sample-site/transfer/partners"
+        },
+        {
+          "text": "广告代理授权书",
+          "url": "http://127.0.0.1:8860/sample-site/transfer/authorization"
+        },
+        {
+          "text": "企业主体登记摘要",
+          "url": "http://127.0.0.1:8860/sample-site/transfer/registry"
+        }
+      ],
+      "at": "2026-11-10T15:44:13.121236+00:00",
+      "sha256": "ef3ba8b56825d5ce7567cf0372dc054517d7ff4def75440d9f02f22c14eca991",
+      "actor": "agent",
+      "kind": "web",
+      "updated_at": "2026-11-10T15:44:13.121262+00:00"
+    },
+    {
+      "id": "src-ad39275d1f8b",
+      "session_id": "case-12e257d9bc52",
+      "title": "合作伙伴介绍 · 核验资料",
+      "url": "http://127.0.0.1:8860/sample-site/transfer/partners",
+      "text": "LINKDESK SAMPLE LIBRARY · 虚构公司与合成材料，仅用于方法验证\n星原科技 × 微澜互动\n合作伙伴介绍\n\n星原科技有限公司 与 微澜互动有限公司 是长期商业合作伙伴，双方共同参与「星际农场」的市场推广。\n\n本页仅介绍商业合作，不披露股权、控制关系或预算审批权。\n\n客户核验资料目录\n合作伙伴介绍\n广告代理授权书\n企业主体登记摘要",
+      "links": [
+        {
+          "text": "客户核验资料目录",
+          "url": "http://127.0.0.1:8860/sample-site/transfer/overview"
+        },
+        {
+          "text": "合作伙伴介绍",
+          "url": "http://127.0.0.1:8860/sample-site/transfer/partners"
+        },
+        {
+          "text": "广告代理授权书",
+          "url": "http://127.0.0.1:8860/sample-site/transfer/authorization"
+        },
+        {
+          "text": "企业主体登记摘要",
+          "url": "http://127.0.0.1:8860/sample-site/transfer/registry"
+        }
+      ],
+      "at": "2026-11-10T15:44:16.354563+00:00",
+      "sha256": "2c1d2b2da5954ab60109ee9ec439a148962bbe1749cf1302ac676b47dcc5968e",
+      "actor": "agent",
+      "kind": "web",
+      "updated_at": "2026-11-10T15:44:16.354613+00:00"
+    }
+  ]
+}
