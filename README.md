@@ -90,7 +90,7 @@ LINKDESK_API_KEY=your-api-key
 python run_agent.py
 ```
 
-打开 **http://127.0.0.1:8860/**。macOS 也可双击 `start-agent.command`。如已安装 Google Chrome，macOS 默认使用其可执行文件启动独立浏览器，不读取个人 Chrome 登录、Cookie 或标签页。
+打开 [本机工作区](http://127.0.0.1:8860/)。macOS 也可双击 `start-agent.command`。如已安装 Google Chrome，macOS 默认使用其可执行文件启动独立浏览器，不读取个人 Chrome 登录、Cookie 或标签页。
 
 可用 `LINKDESK_BROWSER_CHANNEL=chrome` 指定 Chrome。未安装 Chrome 的环境使用 Playwright Chromium。自定义端口：`python run_agent.py --port 8870`。
 
